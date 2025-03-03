@@ -1,5 +1,5 @@
 # iAqua Aquatics Website
 
-## iaquacarbon@gmai.com
+## iaquacarbon@gmail.com
 
 ### Created by Harutyun Gevoglanyan
