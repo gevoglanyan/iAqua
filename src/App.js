@@ -510,6 +510,7 @@ const Disclaimer = () => (
   <section id="disclaimer" className="disclaimer">
     <div className="container">
       <h2 className="section-title">Disclaimer</h2>
+      {/*
       <div className="steps-container">
         <div className="step">
           <div className="step-number">1</div>
@@ -548,6 +549,7 @@ const Disclaimer = () => (
         </div>
       </div>
       <br />
+      */}
     </div>
   </section>
 );
@@ -572,6 +574,7 @@ const Footer = () => (
             <li><a href="#featured">Fish Collection</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#how-to-order">How to Order</a></li>
+            <li><a href="#disclaimer">Disclaimer</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
