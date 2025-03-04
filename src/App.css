@@ -80,7 +80,6 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.8)), url('https://via.placeholder.com/1920x1080');
   background-size: cover;
   background-position: center;
   background-color: #fff;
@@ -130,7 +129,25 @@ nav ul li a:hover {
 /* Featured Section */
 .featured {
   padding-top: 30px; 
-  padding-bottom: 60px;
+  padding-bottom: 30px;
+  background: #fff;
+}
+
+.pre-order {
+  padding-top: 30px; 
+  padding-bottom: 30px;
+  background: #fff;
+}
+
+.plant {
+  padding-top: 30px; 
+  padding-bottom: 30px;
+  background: #fff;
+}
+
+.misc {
+  padding-top: 30px; 
+  padding-bottom: 30px;
   background: #fff;
 }
 
@@ -264,7 +281,7 @@ nav ul li a:hover {
 
 /* About Section */
 .about {
-  padding: 60px 0;
+  padding: 30px 0;
   background: #fff;
 }
 
@@ -290,7 +307,7 @@ nav ul li a:hover {
 .about-text h2:after {
   content: '';
   display: block;
-  width: 60px;
+  width: 20px;
   height: 3px;
   background: red; 
   margin-top: 10px;
@@ -310,13 +327,20 @@ nav ul li a:hover {
 }
 
 .about-image img {
+  display: block;
+  margin: 0 auto;
   max-width: 15%;
   height: auto;
 }
 
 /* How To Order Section */
 .how-to-order {
-  padding: 60px 0;
+  padding: 30px 0;
+  background: #fff;
+}
+
+.disclaimer {
+  padding: 30px 0;
   background: #fff;
 }
 
@@ -361,7 +385,7 @@ nav ul li a:hover {
 footer {
   background-color: #333; 
   color: white;
-  padding: 50px 0 20px;
+  padding: 30px 0 20px;
 }
 
 .footer-content {
