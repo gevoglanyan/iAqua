@@ -344,6 +344,12 @@ nav ul li a:hover {
   background: #fff;
 }
 
+.shipping-policy {
+  padding: 30px 0;
+  background: #fff;
+}
+
+
 .steps-container {
   max-width: 800px;
   margin: 0 auto 30px;
@@ -536,4 +542,20 @@ footer {
 
 .cancel-btn:hover {
   background-color: #b3b3b3;
+}
+
+.disclaimer-list {
+  list-style-position: inside;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+  color: black;
+}
+
+.policy-list {
+  list-style-position: inside;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+  color: black;
 }

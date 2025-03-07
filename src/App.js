@@ -12,8 +12,6 @@ const Header = ({ isAdmin, onOpenLoginModal, onAdminLogout }) => (
           <ul>
             <li><a href="#top">Home</a></li>
             <li><a href="#featured">Fish Collection</a></li>
-            {/*<li><a href="#pre-order">Preorder</a></li> */}
-            {/*<li><a href="#plant">Plants</a></li> */}
             <li><a href="#about">About Us</a></li>
             <li><a href="#how-to-order">How to Order</a></li>
             <li><a href="#disclaimer">Disclaimer</a></li>
@@ -38,11 +36,6 @@ const Header = ({ isAdmin, onOpenLoginModal, onAdminLogout }) => (
 
 const Hero = () => (
   <section className="hero">
-    {/*
-    <div className="about-image">
-      <img src="iAqua Aquatics.png" alt="iAqua Aquatics" />
-    </div>
-    */}
     <h1>iAqua Aquatics</h1>
     <h2>Premium Fish for Your Aquarium</h2>
 
@@ -509,48 +502,217 @@ const HowToOrder = () => (
 const Disclaimer = () => (
   <section id="disclaimer" className="disclaimer">
     <div className="container">
-      <h2 className="section-title">Disclaimer</h2>
-      {/*
-      <div className="steps-container">
-        <div className="step">
-          <div className="step-number">1</div>
-          <div className="step-content">
-            <h3>Browse Our Collection</h3>
-            <p>Float the bags before opening them on the surface for 15-20 minutes with your lights off to let them temperature acclimate. Do not open them at this time.</p>
-          </div>
-        </div>
-        <div className="step">
-          <div className="step-number">2</div>
-          <div className="step-content">
-            <h3>Contact Us</h3>
-            <p>Reach out via email, text, or our contact form to inquire about availability and pricing.</p>
-          </div>
-        </div>
-        <div className="step">
-          <div className="step-number">3</div>
-          <div className="step-content">
-            <h3>Confirm Your Order</h3>
-            <p>We'll confirm availability and provide you with a total price including shipping.</p>
-          </div>
-        </div>
-        <div className="step">
-          <div className="step-number">4</div>
-          <div className="step-content">
-            <h3>Secure Payment</h3>
-            <p>We only accept Zelle due to ongoing scams. All payments must be received before shipping.</p>
-          </div>
-        </div>
-        <div className="step">
-          <div className="step-number">5</div>
-          <div className="step-content">
-            <h3>Receive Your Fish</h3>
-            <p>We ship every Monday and Tuesday (weather permitting) to ensure your fish arrive safely.</p>
-          </div>
+      <div className="about-content side-by-side">
+        <div className="about-text">
+          <h2>Disclaimer</h2>
+
+          <br />
+
+          <h3>
+            By placing an order with <strong>iAqua Aquatics</strong>, the customer acknowledges and agrees to the following terms:
+          </h3>
+
+          <br />
+
+          <ul className="disclaimer-list">
+            <li><strong>Risk of Live Animal Shipping:</strong> While we take every precaution to ensure the safe arrival of your livestock, shipping live animals inherently carries risks.</li>
+            <li><strong>No Guarantee on Survival After Delivery:</strong> Once the fish is placed in your tank, we cannot be responsible for their survival due to differences in customer tank conditions, water quality, diet, or acclimation process.</li>
+            <li><strong>No Refunds for Shipping Delays:</strong> Shipping delays caused by the courier are beyond our control. We do not issue refunds for shipping costs under any circumstances.</li>
+            <li><strong>No Responsibility for Incorrect Addresses:</strong> Customers are fully responsible for ensuring that the shipping address provided is accurate. Incorrect addresses or failed delivery attempts will void any guarantees.</li>
+            <li><strong>Final Sales on All Livestock:</strong> All sales are final once the fish has been shipped. We do not accept returns or exchanges on live animals.</li>
+            <li><strong>Customer Responsibility for Acclimation:</strong> Customers must follow proper acclimation procedures upon receiving their fish. Failure to follow these steps may lead to stress or loss of livestock.</li>
+          </ul>
+
+          <br />
+          <br />
+
+          <h3>
+            For any questions or concerns, feel free to contact the <strong>iAqua Aquatics</strong> team. We are happy to assist you with any inquiries!
+          </h3>
         </div>
       </div>
-      <br />
-      */}
-    </div>
+    </div> 
+  </section>
+);
+
+const ShippingPolicy = () => (
+  <section id="shipping-policy" className="shipping-policy">
+    <div className="container">
+      <div className="about-content side-by-side">
+        <div className="about-text">
+          <h2>Shipping Policy</h2>
+
+          <p>
+            At <strong>iAqua Aquatics</strong>, we are committed to providing the healthiest livestock and ensuring the best shipping experience. 
+            Please review our policies carefully before making a purchase.
+          </p>
+
+          <h3>Important Notes:</h3>
+
+          <br />
+          
+          <ul className="policy-list">
+            <li>The fish shown in photos are for representation only and are <strong>not to scale</strong>. The fish you receive may vary slightly in size and appearance.</li>
+            <li>We <strong>do not ship livestock to Canada</strong>.</li>
+            <li>Shipping days are <strong>Monday, Tuesday, and Wednesday</strong> following the day you place your order.</li>
+            <li>Estimated delivery dates displayed in listings are only <strong>estimates</strong>; please refer to the tracking information provided for accurate delivery updates.</li>
+          </ul>
+
+          <br />
+          <br />
+
+          <h3>Shipping Risks & DOA (Dead on Arrival) Policy</h3>
+
+          <br />
+
+          <p>
+            While we take every precaution to ensure safe delivery, shipping live fish always carries some risk. Please review our <strong>DOA guarantee conditions</strong> carefully:
+          </p>
+
+          <ul className="policy-list">
+            <li><strong>DOA Policy Applies to U.S. Orders Only.</strong> International DOA policies are handled on a case-by-case basis.</li>
+            <li><strong>DOA is still guaranteed</strong> even in cases of shipping delays caused by severe weather or courier-related issues.</li>
+          </ul>
+
+          <br />
+          <br />
+
+          <h3>DOA Credit Conditions:</h3>
+
+          <br />
+
+          <ul className="policy-list">
+            <li>If a fish arrives DOA, a <strong>credit will be issued</strong> toward a future order.</li>
+            <li><strong>Shipping costs are non-refundable.</strong></li>
+            <li>If your package is delayed by the courier, you <strong>may be eligible for free shipping credit</strong> toward a future order, but you must contact us to confirm eligibility.</li>
+            <li>Clear <strong>photos of the DOA in its original packaging</strong> must be emailed to <a href="mailto:iaquaaquatics@gmail.com">iaquaaquatics@gmail.com</a> within <strong>3 hours of delivery</strong>.</li>
+            <li>The easiest way to take a DOA photo is to <strong>float the bag in your tank</strong> and take a clear picture.</li>
+          </ul>
+
+          <br />
+          <br />
+
+          <h3>Situations Where the DOA Guarantee is Void:</h3>
+
+          <br />
+
+          <ul className="policy-list">
+            <li>Delivery is <strong>missed, rescheduled, or left outdoors</strong> for an extended period.</li>
+            <li>Incorrect or changed shipping address after the order has been packed and shipped.</li>
+            <li>Special livestock requests made <strong>outside of regular shipping days</strong> (Monday-Wednesday).</li>
+            <li>Failure to provide <strong>clear DOA photos</strong> within 3 hours of delivery.</li>
+            <li>If a package is <strong>returned</strong> due to refusal, missed delivery, or an incorrect address, no refunds or exchanges will be provided for the livestock or shipping costs.</li>
+          </ul>
+
+          <br />
+          <br />
+
+          <p><strong>Reminder:</strong> It is your responsibility to track your package and be available at the time of delivery. 
+            We strongly recommend signing up for <strong>email and text notifications</strong> from the courier.
+          </p>
+
+          <br />
+
+          <h3>Receiving & Acclimating Your Fish</h3>
+
+          <br />
+
+          <p>Follow these steps to ensure a smooth transition for your new fish:</p>
+
+          <h3>Temperature Acclimation:</h3>
+
+          <br />
+
+          <ul className="policy-list">
+            <li>Float the <strong>sealed bag</strong> on the surface of your tank for <strong>15-20 minutes</strong> with the lights turned off to allow the temperature to adjust.</li>
+            <li><strong>Do not open the bag yet.</strong></li>
+          </ul>
+
+          <br />
+          <br />
+
+          <h3>Water Removal & Transfer:</h3>
+
+          <br />
+
+          <ul className="policy-list">
+            <li>After acclimating, open the bag and <strong>carefully drain the water</strong> into a bucket while keeping the fish inside the bag.</li>
+            <li>Once most of the water is drained, <strong>gently place the fish into your aquarium</strong>.</li>
+            <li>A small amount of bag water in the tank is <strong>not harmful</strong>.</li>
+          </ul>
+
+          <br />
+          <br />
+
+          <h3>Post-Transfer Care:</h3>
+
+          <ul className="policy-list">
+            <li>Keep your <strong>aquarium lights off</strong> for the rest of the day to reduce stress.</li>
+            <li>Wait <strong>until the next day</strong> before feeding your new fish.</li>
+          </ul>
+
+          <br />
+          <br />
+
+          <h3>General Terms & Conditions</h3>
+
+          <br />
+
+          <h3>Fish Health & Coloration:</h3>
+
+          <br />
+
+          <ul className="policy-list">
+            <li>All our fish are <strong>not artificially colored</strong>. We provide high-quality food and replicate natural lake conditions to promote vibrant, healthy fish.</li>
+            <li>Once the fish is placed in your aquarium, we <strong>cannot guarantee color retention or health</strong>, as water quality and diet vary per customer.</li>
+          </ul>
+
+          <br />
+          <br />
+
+          <h3>Refunds & Credits:</h3>
+
+          <br />
+
+          <ul className="policy-list">
+            <li>We <strong>do not offer refunds</strong> or credits if the customer changes their mind or for any reason beyond our control.</li>
+            <li>We <strong>do not refund shipping costs under any circumstances.</strong></li>
+          </ul>
+
+          <br />
+          <br />
+
+          <h3>Courier Selection & Shipping Rates:</h3>
+
+          <br />
+
+          <ul className="policy-list">
+            <li>We will choose the <strong>best courier</strong> based on your selected shipping rate.</li>
+            <li>If you have a preferred courier, please indicate this in the <strong>order notes, email, or phone call</strong> when placing your order.</li>
+            <li>Shipping rates may vary based on your location. We will notify you of any necessary rate adjustments.</li>
+          </ul>
+
+          <br />
+          <br />
+          <br />
+
+          <p>
+            For any questions or concerns, feel free to contact the <strong>iAqua Aquatics</strong> team. We are happy to assist you with any inquiries!
+          </p>
+
+          <br />
+          <br />
+
+          <div className="about-image">
+            <img src="iAqua Aquatics.png" alt="iAqua Aquatics" />
+          </div>
+
+          <br />
+          <br />
+        
+        </div>
+      </div>
+    </div>  
   </section>
 );
 
@@ -585,7 +747,7 @@ const Footer = () => (
 
             <br />
 
-            <li>Email: iaquaaquatics@gmail.com</li>
+            <li>Email: <a href="mailto:iaquaaquatics@gmail.com">iaquaaquatics@gmail.com</a></li>
             <li>Phone: (661) 666 - 2514</li>
             <li>Hours: Everyday from 9:00 AM - 5:00 PM</li>
           </ul>
@@ -670,6 +832,7 @@ function App() {
         <About />
         <HowToOrder />
         <Disclaimer />
+        <ShippingPolicy />
       </main>
       <Footer />
       {showLoginModal && (
