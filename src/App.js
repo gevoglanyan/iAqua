@@ -15,6 +15,7 @@ const Header = ({ isAdmin, onOpenLoginModal, onAdminLogout }) => (
             <li><a href="#about">About Us</a></li>
             <li><a href="#how-to-order">How to Order</a></li>
             <li><a href="#disclaimer">Disclaimer</a></li>
+            <li><a href="#shipping-policy">Shipping Policy</a></li>
             <li><a href="#contact">Contact Us</a></li>
             <li>
               {isAdmin ? (
@@ -542,10 +543,12 @@ const ShippingPolicy = () => (
         <div className="about-text">
           <h2>Shipping Policy</h2>
 
-          <p>
+          <h3>
             At <strong>iAqua Aquatics</strong>, we are committed to providing the healthiest livestock and ensuring the best shipping experience. 
-            Please review our policies carefully before making a purchase.
-          </p>
+            Please review our policies carefully.
+          </h3>
+
+          <br />
 
           <h3>Important Notes:</h3>
 
@@ -565,9 +568,11 @@ const ShippingPolicy = () => (
 
           <br />
 
-          <p>
+          <h3>
             While we take every precaution to ensure safe delivery, shipping live fish always carries some risk. Please review our <strong>DOA guarantee conditions</strong> carefully:
-          </p>
+          </h3>
+
+          <br />
 
           <ul className="policy-list">
             <li><strong>DOA Policy Applies to U.S. Orders Only.</strong> International DOA policies are handled on a case-by-case basis.</li>
@@ -585,7 +590,7 @@ const ShippingPolicy = () => (
             <li>If a fish arrives DOA, a <strong>credit will be issued</strong> toward a future order.</li>
             <li><strong>Shipping costs are non-refundable.</strong></li>
             <li>If your package is delayed by the courier, you <strong>may be eligible for free shipping credit</strong> toward a future order, but you must contact us to confirm eligibility.</li>
-            <li>Clear <strong>photos of the DOA in its original packaging</strong> must be emailed to <a href="mailto:iaquaaquatics@gmail.com">iaquaaquatics@gmail.com</a> within <strong>3 hours of delivery</strong>.</li>
+            <li>Clear <strong>photos of the DOA in its original packaging</strong> must be emailed to <strong>iaquaaquatics@gmail.com</strong> within <strong>3 hours of delivery</strong>.</li>
             <li>The easiest way to take a DOA photo is to <strong>float the bag in your tank</strong> and take a clear picture.</li>
           </ul>
 
@@ -607,17 +612,21 @@ const ShippingPolicy = () => (
           <br />
           <br />
 
-          <p><strong>Reminder:</strong> It is your responsibility to track your package and be available at the time of delivery. 
-            We strongly recommend signing up for <strong>email and text notifications</strong> from the courier.
-          </p>
+          <h3><strong>Reminder:</strong> It is your responsibility to track your package and be available at the time of delivery. 
+            We strongly recommend signing up for <strong>email notifications</strong> from the courier.
+          </h3>
 
+          <br />
           <br />
 
           <h3>Receiving & Acclimating Your Fish</h3>
 
           <br />
 
-          <p>Follow these steps to ensure a smooth transition for your new fish:</p>
+          <h3>Follow these steps to ensure a smooth transition for your new fish:</h3>
+
+          <br />
+          
 
           <h3>Temperature Acclimation:</h3>
 
@@ -696,9 +705,15 @@ const ShippingPolicy = () => (
           <br />
           <br />
 
-          <p>
-            For any questions or concerns, feel free to contact the <strong>iAqua Aquatics</strong> team. We are happy to assist you with any inquiries!
-          </p>
+          <h3>
+            For any questions or concerns, feel free to contact the <strong>iAqua Aquatics</strong> team.
+          </h3>
+
+          <br />
+
+          <h3>
+            We are happy to assist you with any inquiries!
+          </h3>
 
           <br />
           <br />
@@ -737,6 +752,7 @@ const Footer = () => (
             <li><a href="#about">About Us</a></li>
             <li><a href="#how-to-order">How to Order</a></li>
             <li><a href="#disclaimer">Disclaimer</a></li>
+            <li><a href="#shipping-policy">Shipping Policy</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
