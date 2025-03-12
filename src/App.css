@@ -14,7 +14,7 @@ body {
 
 /* Header */
 header {
-  background-color: pink;
+  background-color: magenta;
   padding: 15px 0;
 }
 
@@ -37,7 +37,7 @@ header {
 }
 
 .logo span {
-  color: purple;
+  color: yellow;
 }
 
 nav ul {
@@ -58,7 +58,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: purple; 
+  color: blue; 
 }
 
 /* Hero Section */
@@ -92,7 +92,7 @@ nav ul li a:hover {
 /* Buttons */
 .btn {
   display: inline-block;
-  background-color: pink;
+  background-color: purple;
   color: white;
   padding: 10px 22px;
   text-decoration: none;
@@ -105,7 +105,7 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-  background-color: purple;
+  background-color: blue;
   transform: translateY(-2px);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
@@ -122,7 +122,7 @@ nav ul li a:hover {
   text-align: center;
   font-size: 2.2rem;
   margin-bottom: 40px;
-  color: black;
+  color: purple;
   position: relative;
 }
 
@@ -307,7 +307,7 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-  background-color: pink;
+  background-color: magenta;
   color: white;
   padding: 30px 0 20px;
 }
@@ -362,7 +362,7 @@ footer {
 }
 
 .footer-column ul li a:hover {
-  color: purple; 
+  color: blue; 
 }
 
 .footer-bottom {

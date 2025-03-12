@@ -20,7 +20,9 @@ const Disclaimer = () => (
             <li><strong>Final Sales on All Livestock:</strong> All sales are final once the fish has been shipped. We do not accept returns or exchanges on live animals.</li>
             <li><strong>Customer Responsibility for Acclimation:</strong> Customers must follow proper acclimation procedures upon receiving their fish. Failure to follow these steps may lead to stress or loss of livestock.</li>
           </ul>
-          <br /><br />
+          <br />
+          <br />
+          <br />
           <p>
             For any questions or concerns, feel free to contact the <strong>iAqua Aquatics</strong> team. We are happy to assist you with any inquiries!
           </p>

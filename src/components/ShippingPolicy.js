@@ -5,8 +5,10 @@ const ShippingPolicy = () => (
     <div className="container">
       <div className="about-content side-by-side">
         <div className="about-text">
-          <br /><br />
+          <br />
+          <br />
           <h2>Shipping Policy</h2>
+          <br />
           <p>
             At <strong>iAqua Aquatics</strong>, we are committed to providing the healthiest livestock and ensuring the best shipping experience. 
             Please review our policies carefully.
@@ -60,7 +62,7 @@ const ShippingPolicy = () => (
           <br /><br />
           <p><strong>Receiving & Acclimating Your Fish</strong></p>
           <br />
-          <p>Follow these steps to ensure a smooth transition for your new fish</p>
+          <p>Follow these steps to ensure a smooth transition for your new fish:</p>
           <br />
           <p><strong>Temperature Acclimation</strong></p>
           <ul className="policy-list">

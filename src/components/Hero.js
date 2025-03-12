@@ -13,8 +13,7 @@ const Hero = () => (
     <br />
     <p>Discover a vibrant underwater world with our hand-selected aquatic life.</p>
     <br />
-    <br />
-    <a href="#featured" className="btn">
+    <a href="#fish" className="btn">
       Explore Our Fish Collection
     </a>
     <br />

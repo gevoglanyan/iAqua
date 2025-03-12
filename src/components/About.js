@@ -13,7 +13,7 @@ const About = () => (
           </p>
           <br />
           <p>
-            With over 20 years of experience in the aquatics hobby, our team is passionate about providing healthy, vibrant fish.
+            With over <strong>20 years of experience</strong> in the aquatics hobby, our team is passionate about providing healthy, vibrant fish.
           </p>
           <p>
             We maintain strict quarantine protocols and only ship fish that we would be proud to keep in our own tanks.
