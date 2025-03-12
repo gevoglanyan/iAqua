@@ -2,6 +2,10 @@ import React from 'react';
 
 const Plant = () => (
   <section id="plant" className="plant">
+
+    <br />
+    <br />
+
     <div className="container">
       <div className="section-header">
         <h2 className="section-title">Aquatic Plant Collection</h2>
@@ -25,8 +29,23 @@ const Plant = () => (
           </div>
         </div>
       </div>
+
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <div className="media-container">
+        <div className="video-section">
+          <video controls width="400">
+            <source src="/iAquaMovie2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
     </div>
   </section>
 );
 
 export default Plant;
+

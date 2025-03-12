@@ -9,7 +9,7 @@
 body {
   color: black;
   line-height: 1.5;
-  background-color: white;
+  background-color: lightcyan;
 }
 
 /* Header */
@@ -37,7 +37,7 @@ header {
 }
 
 .logo span {
-  color: yellow;
+  color: blue;
 }
 
 nav ul {
@@ -68,7 +68,7 @@ nav ul li a:hover {
   margin-bottom: 20px; 
   background-size: cover;
   background-position: center;
-  background-color: white;
+  background-color: lightcyan;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -115,7 +115,7 @@ nav ul li a:hover {
 .plant {
   padding-top: 20px; 
   padding-bottom: 20px;
-  background: white;
+  background: lightcyan;
 }
 
 .section-title {
@@ -203,7 +203,7 @@ nav ul li a:hover {
 /* About Section */
 .about {
   padding: 30px 0;
-  background: white;
+  background: lightcyan;
 }
 
 .about-content {
@@ -257,14 +257,14 @@ nav ul li a:hover {
 /* How To Order Section */
 .how-to-order {
   padding: 30px 0;
-  background: white;
+  background: lightcyan;
 }
 
 /* Disclaimer & Shipping Policy Sections */
 .disclaimer,
 .shipping-policy {
   padding: 10px 0;
-  background: white;
+  background: lightcyan;
 }
 
 /* Steps in How To Order */
@@ -431,6 +431,23 @@ footer {
 
 /* Centeblack Grid */
 .centeblack-grid {
+  justify-content: center;
+  align-items: center;
+}
+
+.media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.video-section {
+  text-align: center;
+}
+
+.centered-grid {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
