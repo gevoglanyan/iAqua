@@ -114,8 +114,8 @@ nav ul li a:hover {
 /* Fish & Plant Sections */
 .fish,
 .plant, .misc {
-  padding-top: 20px; 
-  padding-bottom: 20px;
+  padding-top: 5px; 
+  padding-bottom: 5px;
   background: lightcyan;
 }
 
@@ -151,7 +151,7 @@ nav ul li a:hover {
   gap: 15px; 
   justify-content: center; 
   align-items: center;
-  padding: 20px;
+  padding: 5px;
 }
 
 /* Fish Card Styles */
@@ -526,15 +526,15 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .fish-grid,
-  .plant-grid,
-  .misc-grid {
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); 
+  .fish-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
   }
 
   .fish-card {
     width: 90%; 
-    margin: 0 auto; 
+    margin-bottom: 15px;
   }
 }
 

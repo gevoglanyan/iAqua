@@ -14,6 +14,7 @@ const Plant = () => (
         <div className="fish-card">
           <div className="fish-info">
             <h3 className="fish-name">Aquatic Plant Collection</h3>
+            <br />
             <p className="fish-price">View Our Plants</p>
             <p className="fish-desc">
               Explore our full selection of aquatic plants available at iAqua Aquatics.
@@ -37,7 +38,7 @@ const Plant = () => (
 
       <div className="media-container">
         <div className="video-section">
-          <video controls width="400">
+          <video controls width="415">
             <source src="/iAquaMovie2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
