@@ -1,4 +1,4 @@
-# iAqua Aquatics Website
+# iAqua Aquatics
 
 ## https://www.iaquaaquatics.com
 
