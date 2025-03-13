@@ -21,6 +21,11 @@ const Hero = () => (
     <a href="#plant" className="btn">
       Explore Our Plant Collection
     </a>
+    <br />
+    <br />
+    <a href="#carbon" className="btn">
+      Explore Our Carbon Collection
+    </a>
     <div className="media-container">
       <div className="video-section">
         <br />

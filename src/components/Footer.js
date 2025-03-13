@@ -17,6 +17,7 @@ const Footer = () => (
             <li><a href="#top">Home</a></li>
             <li><a href="#featured">Fish Collection</a></li>
             <li><a href="#plant">Plant Collection</a></li>
+            <li><a href="#carbon">Carbon Collection</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#how-to-order">How to Order</a></li>
             <li><a href="#disclaimer">Disclaimer</a></li>

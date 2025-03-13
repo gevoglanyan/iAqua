@@ -112,7 +112,7 @@ nav ul li a:hover {
 
 /* Fish & Plant Sections */
 .fish,
-.plant {
+.plant, .misc {
   padding-top: 20px; 
   padding-bottom: 20px;
   background: lightcyan;
@@ -144,7 +144,7 @@ nav ul li a:hover {
 }
 
 .fish-grid, 
-.plant-grid {
+.plant-grid, .misc-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, auto));
   gap: 25px;
@@ -243,11 +243,25 @@ nav ul li a:hover {
 .image1 img {
   display: block;
   margin: 0 auto;
-  max-width: 10%;
+  max-width: 15%;
   height: auto;
 }
 
 .image2 img {
+  display: block;
+  margin: 0 auto;
+  max-width: 20%;
+  height: auto;
+}
+
+.image3 img {
+  display: block;
+  margin: 0 auto;
+  max-width: 20%;
+  height: auto;
+}
+
+.image4 img {
   display: block;
   margin: 0 auto;
   max-width: 15%;
@@ -450,4 +464,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.carbon-image {
+  width: 75%;     
+  height: 75%;     
 }
