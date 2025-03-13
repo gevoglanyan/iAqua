@@ -51,7 +51,7 @@ const Carbon = () => {
       id: 4, 
       name: "iAqua Carbon - XL", 
       price: "$24.99", 
-      description: "XL size of iAqua Carbon", 
+      description: "XL Size of iAqua Carbon", 
       image: "xlarge.jpg" 
     },
   ];
