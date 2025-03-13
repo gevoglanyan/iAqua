@@ -197,7 +197,8 @@ nav ul li a:hover {
 /* Button Container within Fish Card */
 .button-container {
   display: flex;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
   margin-top: 10px;
 }
 
@@ -560,4 +561,3 @@ footer {
     justify-content: flex-start; /* Aligns with text on larger screens */
   }
 }
-

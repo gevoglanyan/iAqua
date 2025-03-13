@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CarbonCard = ({ id, name, price, description, image }) => (
+const CarbonCard = ({ name, price, description, image }) => (
   <div className="fish-card">
     <div className="fish-info">
       {image && (
