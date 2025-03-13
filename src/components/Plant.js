@@ -38,7 +38,13 @@ const Plant = () => (
 
       <div className="media-container">
         <div className="video-section">
-          <video controls width="415">
+          <video 
+            playsInline 
+            muted 
+            controls  
+            preload="metadata" 
+            width="100%" 
+            style={{ maxWidth: "415px" }}>
             <source src="/iAquaMovie2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
