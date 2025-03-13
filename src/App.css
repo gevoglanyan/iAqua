@@ -559,12 +559,12 @@ footer {
 
 @media (max-width: 768px) {
   .social-icons {
-    justify-content: center; /* Centers on mobile */
+    justify-content: center; 
   }
 }
 
 @media (min-width: 769px) {
   .social-icons {
-    justify-content: flex-start; /* Aligns with text on larger screens */
+    justify-content: flex-start; 
   }
 }
