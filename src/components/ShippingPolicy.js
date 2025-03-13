@@ -122,10 +122,9 @@ const ShippingPolicy = () => (
           <p>
             We are happy to assist you with any inquiries!
           </p>
+          <br />
+          <br />
         </div>
-      </div>
-      <div className="image4">
-        <img src="aqua.jpg" alt="Aqua" />
       </div>
     </div>  
   </section>

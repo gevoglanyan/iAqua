@@ -29,29 +29,29 @@ const Carbon = () => {
     { 
       id: 1, 
       name: "iAqua Carbon - Small", 
-      price: "$9.99", 
+      price: "$6.99", 
       description: "Small Size of iAqua Carbon", 
       image: "small.jpg" 
     },
     { 
       id: 2, 
       name: "iAqua Carbon - Medium", 
-      price: "$19.99", 
+      price: "$8.99", 
       description: "Medium Size of iAqua Carbon", 
       image: "medium.jpg" 
     },
     { 
       id: 3, 
       name: "iAqua Carbon - Large", 
-      price: "$29.99", 
+      price: "$12.99", 
       description: "Large Size of iAqua Carbon", 
       image: "large.jpg" 
     },
     { 
       id: 4, 
-      name: "iAqua Carbon - X-Large", 
-      price: "$39.99", 
-      description: "X-Large size of iAqua Carbon", 
+      name: "iAqua Carbon - XL", 
+      price: "$24.99", 
+      description: "XL size of iAqua Carbon", 
       image: "xlarge.jpg" 
     },
   ];

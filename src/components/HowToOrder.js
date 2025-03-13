@@ -61,8 +61,11 @@ const HowToOrder = () => (
         <img src="ZelleQR.png" alt="Zelle QR" />
       </div>
       <div className="text-center">
-        <p><strong>Please make sure to include</strong></p>
-        <p><strong>item information in Zelle payment.</strong></p>
+        <p><strong>Please ensure that you include</strong></p>
+        <p><strong>the item details in the Zelle payment.</strong></p>
+        <br />
+        <p><strong>Additionally, provide your contact</strong></p>
+        <p><strong>information and shipping details as well.</strong></p>
       </div>
     </div>
   </section>
