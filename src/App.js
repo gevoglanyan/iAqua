@@ -11,6 +11,8 @@ import Disclaimer from './components/Disclaimer';
 import ShippingPolicy from './components/ShippingPolicy';
 import Footer from './components/Footer';
 
+import { Analytics } from "@vercel/analytics/react"
+
 function App() {
   return (
     <>
@@ -25,6 +27,7 @@ function App() {
         <HowToOrder />
         <Disclaimer />
         <ShippingPolicy />
+        <Analytics />
       </main>
       <Footer />
     </>
