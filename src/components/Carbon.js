@@ -28,28 +28,28 @@ const Carbon = () => {
   const fishList = [
     { 
       id: 1, 
-      name: "iAqua Caron - Small", 
+      name: "iAqua Carbon - Small", 
       price: "$9.99", 
       description: "Small Size of iAqua Carbon", 
       image: "small.jpg" 
     },
     { 
       id: 2, 
-      name: "iAqua Caron - Medium", 
+      name: "iAqua Carbon - Medium", 
       price: "$19.99", 
       description: "Medium Size of iAqua Carbon", 
       image: "medium.jpg" 
     },
     { 
       id: 3, 
-      name: "iAqua Caron - Large", 
+      name: "iAqua Carbon - Large", 
       price: "$29.99", 
       description: "Large Size of iAqua Carbon", 
       image: "large.jpg" 
     },
     { 
       id: 4, 
-      name: "iAqua Caron - X-Large", 
+      name: "iAqua Carbon - X-Large", 
       price: "$39.99", 
       description: "X-Large size of iAqua Carbon", 
       image: "xlarge.jpg" 

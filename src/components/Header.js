@@ -5,7 +5,7 @@ const Header = () => (
     <div className="container">
       <div className="header-content">
         <div className="logo">
-          i<span>Aqua</span> Aquatics
+          iAqua Aquatics
         </div>
         <nav>
           <ul>
