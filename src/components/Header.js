@@ -1,19 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from 'react';
 
-const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    const checkScreenSize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-    
-    return () => window.removeEventListener("resize", checkScreenSize);
-  }, []);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <header>
@@ -21,22 +13,22 @@ const Header = () => {
         <div className="header-content">
           <div className="logo">iAqua Aquatics</div>
 
-          {isMobile && (
-            <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
-              ☰
-            </button>
-          )}
+          {/* Hamburger Menu Button */}
+          <button className="menu-toggle" onClick={toggleMenu}>
+            ☰
+          </button>
 
+          {/* Navigation Menu */}
           <nav>
-            <ul className={menuOpen || !isMobile ? "show" : ""}>
+            <ul className={`nav-links ${isOpen ? 'show' : ''}`} onClick={() => setIsOpen(false)}>
               <li><a href="#top">Home</a></li>
-              <li><a href="#fish">Fish</a></li>
-              <li><a href="#plant">Plant</a></li>
-              <li><a href="#carbon">Carbon</a></li>
+              <li><a href="#featured">Fish Collection</a></li>
+              <li><a href="#plant">Plant Collection</a></li>
+              <li><a href="#carbon">Carbon Collection</a></li>
               <li><a href="#about">About Us</a></li>
               <li><a href="#how-to-order">How to Order</a></li>
               <li><a href="#disclaimer">Disclaimer</a></li>
-              <li><a href="#shipping-policy">Shipping</a></li>
+              <li><a href="#shipping-policy">Shipping Policy</a></li>
               <li><a href="#contact">Contact Us</a></li>
             </ul>
           </nav>
@@ -46,4 +38,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

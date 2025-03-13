@@ -476,8 +476,12 @@ footer {
 }
 
 @media (max-width: 768px) {
-  nav ul {
-    display: none;
+  .menu-toggle {
+    display: block; 
+  }
+
+  .nav-links {
+    display: none; 
     flex-direction: column;
     background: purple;
     width: 100%;
@@ -488,18 +492,22 @@ footer {
     padding: 10px 0;
   }
 
-  nav ul.show {
+  .nav-links.show {
     display: flex; 
   }
+}
 
+@media (min-width: 769px) {
   .menu-toggle {
-    display: block;
+    display: none; 
+  }
+
+  .nav-links {
+    display: flex; 
+    flex-direction: row;
+    position: relative;
     background: none;
-    border: none;
-    color: white;
-    font-size: 1.8rem;
-    cursor: pointer;
-    margin: 10px;
+    justify-content: flex-end;
   }
 }
 

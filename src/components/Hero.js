@@ -31,7 +31,7 @@ const Hero = () => (
         <br />
         <br />
         <br />
-        <video controls width="500">
+        <video controls width="410">
           <source src="/iAquaMovie1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
