@@ -24,9 +24,9 @@ const Header = () => {
           <nav>
             <ul className={`nav-links ${isOpen ? 'show' : ''}`}>
               <li><a href="#top" onClick={closeMenu}>Home</a></li>
-              <li><a href="#featured" onClick={closeMenu}>Fish Collection</a></li>
-              <li><a href="#plant" onClick={closeMenu}>Plant Collection</a></li>
-              <li><a href="#carbon" onClick={closeMenu}>Carbon Collection</a></li>
+              <li><a href="#fish" onClick={closeMenu}>Fish </a></li>
+              <li><a href="#plant" onClick={closeMenu}>Plant </a></li>
+              <li><a href="#carbon" onClick={closeMenu}>Carbon </a></li>
               <li><a href="#about" onClick={closeMenu}>About Us</a></li>
               <li><a href="#how-to-order" onClick={closeMenu}>How to Order</a></li>
               <li><a href="#disclaimer" onClick={closeMenu}>Disclaimer</a></li>
