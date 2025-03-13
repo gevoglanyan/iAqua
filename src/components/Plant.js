@@ -5,6 +5,9 @@ const Plant = () => (
 
     <br />
     <br />
+    <br />
+    <br />
+    <br />
 
     <div className="container">
       <div className="section-header">
