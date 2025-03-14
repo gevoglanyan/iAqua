@@ -61,6 +61,9 @@ const Footer = () => (
                 </svg>
               </a>
             </div>
+            <br />
+            <br />
+            <li> Created by Harutyun Gevoglanyan</li>
           </ul>
         </div>
       </div>
