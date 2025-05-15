@@ -83,7 +83,7 @@ const Carbon = () => {
       <br />
 
       <div className="image3">
-        <img src="iAqua Carbon.jpg" alt="iAqua Carbon" />
+        <img src="/images/iAqua Carbon.jpg" alt="iAqua Carbon" />
     </div>
     </section>
   );

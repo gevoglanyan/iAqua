@@ -25,7 +25,7 @@ const Plant = () => (
             <div className="button-container">
               <button 
                 className="btn"
-                onClick={() => window.open("/iAqua Aquatics Plants.xlsx", "_blank")}
+                onClick={() => window.open("documents/iAqua Aquatics Plants.xlsx", "_blank")}
               >
                 View Plants
               </button>
@@ -48,7 +48,7 @@ const Plant = () => (
             preload="metadata" 
             width="100%" 
             style={{ maxWidth: "415px" }}>
-            <source src="/iAquaMovie2.mp4" type="video/mp4" />
+            <source src="/videos/iAquaMovie2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>

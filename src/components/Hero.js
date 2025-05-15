@@ -4,10 +4,9 @@ const Hero = () => (
   <section className="hero">
     <br />
     <div className="image1">
-      <img src="iAqua Aquatics.png" alt="iAqua Aquatics" />
+      <img src="images/iAqua Aquatics.png" alt="iAqua Aquatics" />
     </div>
-    <br />
-    <br />
+    <br /> <br />
     <h1>iAqua Aquatics</h1>
     <h2>Premium Fish for Your Aquarium</h2>
     <br />
@@ -16,20 +15,16 @@ const Hero = () => (
     <a href="#fish" className="btn">
       Explore Our Fish Collection
     </a>
-    <br />
-    <br />
+    <br /> <br />
     <a href="#plant" className="btn">
       Explore Our Plant Collection
     </a>
-    <br />
-    <br />
+    <br /> <br />
     <a href="#carbon" className="btn">
       Explore Our Carbon Collection
     </a>
 
-    <br />
-    <br />
-    <br />
+    <br /> <br /> <br />
     
     <div className="media-container">
       <div className="video-section">
@@ -40,7 +35,7 @@ const Hero = () => (
           preload="metadata" 
           width="100%" 
           style={{ maxWidth: "410px" }}>
-          <source src="/iAquaMovie1.mp4" type="video/mp4" />
+          <source src="/videos/iAquaMovie1.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
       </div>

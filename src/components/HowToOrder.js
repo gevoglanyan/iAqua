@@ -58,7 +58,7 @@ const HowToOrder = () => (
       </div>
       <br />
       <div className="image2">
-        <img src="ZelleQR.png" alt="Zelle QR" />
+        <img src="images/ZelleQR.png" alt="Zelle QR" />
       </div>
       <div className="text-center">
         <p><strong>Please ensure that you include</strong></p>

@@ -18,7 +18,7 @@ const Fish = () => (
             <div className="button-container">
               <button 
                 className="btn"
-                onClick={() => window.open("/iAqua Aquatics Fish.xlsx", "_blank")}
+                onClick={() => window.open("documents/iAqua Aquatics Fish.xlsx", "_blank")}
               >
                 View Fish
               </button>
