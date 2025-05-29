@@ -9,8 +9,6 @@ const Fish = () => (
       <div className="fish-grid centered-grid">
         <div className="fish-card">
           <div className="fish-info">
-            <h3 className="fish-name">Fish Collection</h3>
-            <br />
             <p className="fish-price">View Our Fish</p>
             <p className="fish-desc">
               Explore our full selection of aquatic fish available at iAqua Aquatics.

@@ -16,8 +16,6 @@ const Plant = () => (
       <div className="plant-grid centered-grid">
         <div className="fish-card">
           <div className="fish-info">
-            <h3 className="fish-name">Aquatic Plant Collection</h3>
-            <br />
             <p className="fish-price">View Our Plants</p>
             <p className="fish-desc">
               Explore our full selection of aquatic plants available at iAqua Aquatics.

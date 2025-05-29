@@ -12,8 +12,6 @@ const CarbonCard = ({ name, price, description, image }) => (
       <h3 className="fish-name">{name}</h3>
       <p className="fish-price">{price}</p>
 
-      <br />
-
       <p className="fish-desc">{description}</p>
       <div className="button-container">
         <a href="#how-to-order" className="btn">
@@ -29,37 +27,32 @@ const Carbon = () => {
     { 
       id: 1, 
       name: "iAqua Carbon - Small", 
-      price: "$6.99", 
-      description: "Small size of iAqua Carbon", 
-      image: "small.jpg" 
+      price: "$6.99 per bag", 
+      image: "/images/small.jpg" 
     },
     { 
       id: 2, 
       name: "iAqua Carbon - Medium", 
-      price: "$8.99", 
-      description: "Medium size of iAqua Carbon", 
-      image: "medium.jpg" 
+      price: "$8.99 per bag", 
+      image: "/images/medium.jpg" 
     },
     { 
       id: 3, 
       name: "iAqua Carbon - Large", 
-      price: "$12.99", 
-      description: "Large size of iAqua Carbon", 
-      image: "large.jpg" 
+      price: "$12.99 per bag", 
+      image: "/images/large.jpg" 
     },
     { 
       id: 4, 
       name: "iAqua Carbon - XL", 
-      price: "$24.99", 
-      description: "XL size of iAqua Carbon", 
-      image: "xlarge.jpg" 
+      price: "$24.99 per bag", 
+      image: "/images/xlarge.jpg" 
     },
   ];
 
   return (
     <section id="carbon" className="carbon">
-      <br />
-      <br />
+      <br /> <br />
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">Carbon Collection</h2>
@@ -71,16 +64,13 @@ const Carbon = () => {
               id={fish.id} 
               name={fish.name} 
               price={fish.price} 
-              description={fish.description}
               image={fish.image}
             />
           ))}
         </div>
       </div>
 
-      <br />
-      <br />
-      <br />
+      <br /> <br /> <br />
 
       <div className="image3">
         <img src="/images/iAqua Carbon.jpg" alt="iAqua Carbon" />

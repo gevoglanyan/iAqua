@@ -5,8 +5,7 @@ const About = () => (
     <div className="container">
       <div className="about-content side-by-side">
         <div className="about-text">
-          <br />
-          <br />
+          <br /> <br />
           <h2>About iAqua Aquatics</h2>
           <br />
           <p>

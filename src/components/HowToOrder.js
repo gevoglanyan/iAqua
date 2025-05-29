@@ -3,7 +3,7 @@ import React from 'react';
 const HowToOrder = () => (
   <section id="how-to-order" className="how-to-order">
     <div className="container">
-      <br /><br />
+      <br /> <br />
       <h2 className="section-title">How to Order</h2>
       <div className="steps-container">
         <div className="step">
