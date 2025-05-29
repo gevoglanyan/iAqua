@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,6 +10,24 @@ const Header = () => {
   const closeMenu = () => {
     setIsOpen(false);
   };
+
+  useEffect(() => {
+    const html = document.documentElement;
+    const body = document.body;
+
+    if (isOpen) {
+      body.style.overflow = 'hidden';
+      html.style.overflow = 'hidden';
+    } else {
+      body.style.overflow = '';
+      html.style.overflow = '';
+    }
+
+    return () => {
+      body.style.overflow = '';
+      html.style.overflow = '';
+    };
+  }, [isOpen]);
 
   return (
     <header>
