@@ -350,15 +350,6 @@ footer {
   position: relative;
 }
 
-.footer-column h3:after {
-  content: '';
-  display: block;
-  width: 40px;
-  height: 2px;
-  background: white;
-  margin-top: 8px;
-}
-
 .footer-column p {
   color: white;
   line-height: 1.6;
@@ -471,23 +462,6 @@ footer {
   margin: 0 auto; 
 }
 
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: rebeccapurple;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
-
   .menu-toggle {
     display: block;
     background: none;
@@ -497,7 +471,7 @@ footer {
     cursor: pointer;
     margin: 10px;
   }
-}
+
 
 @media (min-width: 769px) {
   .menu-toggle {
@@ -577,5 +551,84 @@ footer {
 @media (min-width: 769px) {
   .social-icons {
     justify-content: flex-start; 
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1000;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rebeccapurple;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    padding: 0;
+    z-index: 999;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-links li {
+    margin: 20px 0;
+  }
+
+  .nav-links li a {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .nav-links li a:hover {
+    color: lightgray;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    position: relative;
+    background: none;
+    justify-content: flex-end;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .menu-toggle {
+    display: none;
   }
 }

@@ -29,8 +29,6 @@ const Header = () => {
               <li><a href="#carbon" onClick={closeMenu}>Carbon </a></li>
               <li><a href="#about" onClick={closeMenu}>About Us</a></li>
               <li><a href="#how-to-order" onClick={closeMenu}>How to Order</a></li>
-              <li><a href="#disclaimer" onClick={closeMenu}>Disclaimer</a></li>
-              <li><a href="#shipping-policy" onClick={closeMenu}>Shipping Policy</a></li>
               <li><a href="#contact" onClick={closeMenu}>Contact Us</a></li>
             </ul>
           </nav>
