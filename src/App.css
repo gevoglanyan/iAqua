@@ -382,8 +382,14 @@ footer {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .header-content {
-    flex-direction: column;
+    flex-direction: row;       
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
     text-align: center;
+    margin: 0;
   }
   
   nav ul li {
@@ -558,9 +564,10 @@ footer {
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
-    position: absolute;
-    top: 15px;
-    right: 20px;
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-left: auto;
     z-index: 1000;
     font-size: 2rem;
     background: none;
