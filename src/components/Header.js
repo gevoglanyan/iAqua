@@ -58,6 +58,14 @@ const Header = () => {
 
       {isOpen && (
         <nav className="fixed inset-0 bg-primary text-white flex flex-col items-center justify-center z-50">
+          <button
+            className="absolute top-6 right-6 text-3xl text-white focus:outline-none"
+            onClick={toggleMenu}
+            aria-label="Close menu"
+          >
+            X
+          </button>
+
           <ul className="flex flex-col gap-6 text-lg font-medium text-center">
             <li><Link to="/" state={{ scrollTo: 'top' }} onClick={closeMenu} className="hover:text-purple-200">Home</Link></li>
             <li><Link to="/shop" onClick={closeMenu} className="hover:text-purple-200">Our Shop</Link></li>
