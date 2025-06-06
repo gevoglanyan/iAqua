@@ -1,71 +1,57 @@
 import React from 'react';
 
 const HowToOrder = () => (
-  <section id="how-to-order" className="how-to-order">
-    <div className="container">
-      <br /> <br />
-      <h2 className="section-title">How to Order</h2>
-      <div className="steps-container">
-        <div className="step">
-          <div className="step-number">1</div>
-          <div className="step-content">
-            <h3>Browse Our Collection</h3>
-            <p>Explore our featured fish collection and note the species you're interested in.</p>
+  <section id="how-to-order" className="py-20 bg-white">
+    <div className="max-w-4xl mx-auto px-4 text-center">
+      <h2 className="text-4xl font-extrabold text-primary mb-10 tracking-tight">How to Order</h2>
+
+      <div className="space-y-10">
+        {[
+          {
+            step: 1,
+            title: "Browse & Add to Cart",
+            desc: "Explore our shop and add fish, plants, or supplies to your cart."
+          },
+          {
+            step: 2,
+            title: "Secure Checkout",
+            desc: "You'll receive an email confirmation once your order is placed."
+          },
+          {
+            step: 3,
+            title: "Order Confirmation",
+            desc: "After payment, we'll confirm your order and shipping schedule."
+          },
+          {
+            step: 4,
+            title: "Receive Your Items",
+            desc: "We ship Mondays and Tuesdays (weather permitting)."
+          },
+          {
+            step: 5,
+            title: "Bulk Orders & Special Requests",
+            desc: "For bulk or custom orders, please contact us directly."
+          },
+        ].map(({ step, title, desc }) => (
+          <div key={step} className="flex flex-col items-center">
+            <div className="text-3xl font-bold text-primary w-10 text-center mb-2">{step}</div>
+            <div className="max-w-xl">
+              <h3 className="text-xl font-semibold mb-1">{title}</h3>
+              <p className="text-gray-700 text-base">{desc}</p>
+            </div>
           </div>
-        </div>
-        <div className="step">
-          <div className="step-number">2</div>
-          <div className="step-content">
-            <h3>Contact Us</h3>
-            <p>Reach out via email, text, or our contact form to inquire about availability and pricing.</p>
-          </div>
-        </div>
-        <div className="step">
-          <div className="step-number">3</div>
-          <div className="step-content">
-            <h3>Confirm Your Order</h3>
-            <p>We'll confirm availability and provide you with a total price including shipping.</p>
-          </div>
-        </div>
-        <div className="step">
-          <div className="step-number">4</div>
-          <div className="step-content">
-            <h3>Secure Payment</h3>
-            <p>We only accept Zelle due to ongoing scams. All payments must be received before shipping.</p>
-          </div>
-        </div>
-        <div className="step">
-          <div className="step-number">5</div>
-          <div className="step-content">
-            <h3>Receive Your Fish</h3>
-            <p>We ship every Monday and Tuesday (weather permitting) to ensure your fish arrive safely.</p>
-          </div>
-        </div>
+        ))}
       </div>
+
       <br />
-      <div className="text-center">
+
+      <div className="text-center mt-14">
         <a
-          href="mailto:iaquaaquatics@gmail.com?subject=Order Inquiry&body=Hi, I would like to start an order. Please provide me with the available options and pricing."
-          className="btn"
+          href="mailto:iaquaaquatics@gmail.com?subject=Bulk Order Inquiry&body=Hi, I'm interested in placing a bulk or special order. Please provide more information."
+          className="inline-block bg-primary text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition font-semibold"
         >
-          Contact Us to Start Your Order
+          Contact Us for Bulk Orders
         </a>
-      </div>
-      <br />
-      <div className="text-center">
-        <br />
-        <h2>Zelle @ IAQUA</h2>
-      </div>
-      <br />
-      <div className="image2">
-        <img src="images/ZelleQR.png" alt="Zelle QR" />
-      </div>
-      <div className="text-center">
-        <p><strong>Please ensure that you include</strong></p>
-        <p><strong>the item details in the Zelle payment.</strong></p>
-        <br />
-        <p><strong>Additionally, provide your contact</strong></p>
-        <p><strong>information and shipping details as well.</strong></p>
       </div>
     </div>
   </section>

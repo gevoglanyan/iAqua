@@ -1,132 +1,97 @@
 import React from 'react';
 
 const ShippingPolicy = () => (
-  <section id="shipping-policy" className="shipping-policy">
-    <div className="container">
-      <div className="about-content side-by-side">
-        <div className="about-text">
-          <br />
-          <br />
-          <h2>Shipping Policy</h2>
-          <br />
-          <p>
-            At <strong>iAqua Aquatics</strong>, we are committed to providing the healthiest livestock and ensuring the best shipping experience. 
-            Please review our policies carefully.
-          </p>
-          <br />
-          <p><strong>Important Notes</strong></p>
-          <ul className="policy-list">
-            <li>The fish shown in photos are for representation only and are <strong>not to scale</strong>. The fish you receive may vary slightly in size and appearance.</li>
-            <li>We <strong>do not ship livestock to Canada</strong>.</li>
-            <li>Shipping days are <strong>Monday, Tuesday, and Wednesday</strong> following the day you place your order.</li>
-            <li>Estimated delivery dates displayed in listings are only <strong>estimates</strong>; please refer to the tracking information provided for accurate delivery updates.</li>
-          </ul>
-          <br />
-          <br />
-          <br />
-          <p><strong>Shipping Risks & DOA (Dead on Arrival) Policy</strong></p>
-          <p>
-            While we take every precaution to ensure safe delivery, shipping live fish always carries some risk. Please review our <strong>DOA guarantee conditions</strong> carefully:
-          </p>
-          <ul className="policy-list">
-            <li><strong>DOA Policy Applies to U.S. Orders Only.</strong> International DOA policies are handled on a case-by-case basis.</li>
-            <li><strong>DOA is still guaranteed</strong> even in cases of shipping delays caused by severe weather or courier-related issues.</li>
-          </ul>
-          <br />
-          <br />
-          <br />
-          <p><strong>DOA Credit Conditions</strong></p>
-          <ul className="policy-list">
-            <li>If a fish arrives DOA, a <strong>credit will be issued</strong> toward a future order.</li>
-            <li><strong>Shipping costs are non-refundable.</strong></li>
-            <li>If your package is delayed by the courier, you <strong>may be eligible for free shipping credit</strong> toward a future order, but you must contact us to confirm eligibility.</li>
-            <li>Clear <strong>photos of the DOA in its original packaging</strong> must be emailed to <strong>iaquaaquatics@gmail.com</strong> within <strong>3 hours of delivery</strong>.</li>
-            <li>The easiest way to take a DOA photo is to <strong>float the bag in your tank</strong> and take a clear picture.</li>
-          </ul>
-          <br />
-          <br />
-          <br />
-          <p><strong>Situations Where the DOA Guarantee is Void</strong></p>
-          <ul className="policy-list">
-            <li>Delivery is <strong>missed, rescheduled, or left outdoors</strong> for an extended period.</li>
-            <li>Incorrect or changed shipping address after the order has been packed and shipped.</li>
-            <li>Special livestock requests made <strong>outside of regular shipping days</strong> (Monday-Wednesday).</li>
-            <li>Failure to provide <strong>clear DOA photos</strong> within 3 hours of delivery.</li>
-            <li>If a package is <strong>returned</strong> due to refusal, missed delivery, or an incorrect address, no refunds or exchanges will be provided for the livestock or shipping costs.</li>
-          </ul>
-          <br />
-          <br />
-          <p><strong>Reminder:</strong> It is your responsibility to track your package and be available at the time of delivery. 
-            We strongly recommend signing up for <strong>email notifications</strong> from the courier.
-          </p>
-          <br /><br />
-          <p><strong>Receiving & Acclimating Your Fish</strong></p>
-          <br />
-          <p>Follow these steps to ensure a smooth transition for your new fish:</p>
-          <br />
-          <p><strong>Temperature Acclimation</strong></p>
-          <ul className="policy-list">
-            <li>Float the <strong>sealed bag</strong> on the surface of your tank for <strong>15-20 minutes</strong> with the lights turned off to allow the temperature to adjust.</li>
-            <li><strong>Do not open the bag yet.</strong></li>
-          </ul>
-          <br />
-          <br />
-          <br />
-          <p><strong>Water Removal & Transfer</strong></p>
-          <ul className="policy-list">
-            <li>After acclimating, open the bag and <strong>carefully drain the water</strong> into a bucket while keeping the fish inside the bag.</li>
-            <li>Once most of the water is drained, <strong>gently place the fish into your aquarium</strong>.</li>
-            <li>A small amount of bag water in the tank is <strong>not harmful</strong>.</li>
-          </ul>
-          <br />
-          <br />
-          <br />
-          <p><strong>Post-Transfer Care</strong></p>
-          <ul className="policy-list">
-            <li>Keep your <strong>aquarium lights off</strong> for the rest of the day to reduce stress.</li>
-            <li>Wait <strong>until the next day</strong> before feeding your new fish.</li>
-          </ul>
-          <br />
-          <br />
-          <br />
-          <p><strong>General Terms & Conditions</strong></p>
-          <p><strong>Fish Health & Coloration</strong></p>
-          <ul className="policy-list">
-            <li>All our fish are <strong>not artificially colored</strong>. We provide high-quality food and replicate natural lake conditions to promote vibrant, healthy fish.</li>
-            <li>Once the fish is placed in your aquarium, we <strong>cannot guarantee color retention or health</strong>, as water quality and diet vary per customer.</li>
-          </ul>
-          <br />
-          <br />
-          <br />
-          <p><strong>Refunds & Credits</strong></p>
-          <ul className="policy-list">
-            <li>We <strong>do not offer refunds</strong> or credits if the customer changes their mind or for any reason beyond our control.</li>
-            <li>We <strong>do not refund shipping costs under any circumstances.</strong></li>
-          </ul>
-          <br />
-          <br />
-          <br />
-          <p><strong>Courier Selection & Shipping Rates:</strong></p>
-          <ul className="policy-list">
-            <li>We will choose the <strong>best courier</strong> based on your selected shipping rate.</li>
-            <li>If you have a preferred courier, please indicate this in the <strong>order notes, email, or phone call</strong> when placing your order.</li>
-            <li>Shipping rates may vary based on your location. We will notify you of any necessary rate adjustments.</li>
-          </ul>
-          <br />
-          <br />
-          <br />
-          <p>
-            For any questions or concerns, feel free to contact the <strong>iAqua Aquatics</strong> team.
-          </p>
-          <br />
-          <p>
-            We are happy to assist you with any inquiries!
-          </p>
-          <br />
-          <br />
-        </div>
-      </div>
-    </div>  
+  <section id="shipping-policy" className="py-20 bg-white">
+    <div className="max-w-5xl mx-auto px-4">
+      <h2 className="text-4xl font-extrabold text-center text-primary mb-10 tracking-tight">Shipping Policy</h2>
+
+      <p className="text-lg text-gray-700 mb-6 text-center">
+        At <strong className="text-primary">iAqua Aquatics</strong>, we are committed to providing the healthiest livestock and ensuring the best shipping experience. 
+        <br />
+        Please review our policies carefully.
+      </p>
+
+      <h3 className="text-xl font-semibold text-primary mt-10 mb-3">Important Notes</h3>
+      <ul className="list-disc list-inside space-y-3 text-gray-700">
+        <li>The fish shown in photos are for representation only and are <strong>not to scale</strong>.</li>
+        <li>We <strong>do not ship livestock to Canada</strong>.</li>
+        <li>Shipping days are <strong>Monday, Tuesday, and Wednesday</strong> after your order is placed.</li>
+        <li>Delivery estimates are approximate; always refer to your tracking number for details.</li>
+      </ul>
+
+      <h3 className="text-xl font-semibold text-primary mt-10 mb-3">Shipping Risks & DOA Policy</h3>
+      <p className="text-gray-700 mb-4">Shipping live animals carries risk. Please review our <strong>DOA (Dead on Arrival)</strong> policy:</p>
+      <ul className="list-disc list-inside space-y-3 text-gray-700">
+        <li><strong>Applies to U.S. Orders Only.</strong></li>
+        <li><strong>Still valid during weather or courier delays.</strong></li>
+      </ul>
+
+      <h3 className="text-xl font-semibold text-primary mt-10 mb-3">DOA Credit Conditions</h3>
+      <ul className="list-disc list-inside space-y-3 text-gray-700">
+        <li>Store credit will be issued for any DOA cases.</li>
+        <li><strong>Shipping charges are non-refundable.</strong></li>
+        <li>Shipping delays may qualify for credit—contact us to verify.</li>
+        <li>Email <strong>clear photos</strong> of the DOA item in original packaging within <strong>3 hours</strong> of delivery.</li>
+        <li>Float the sealed bag in your tank and take a clear photo.</li>
+      </ul>
+
+      <h3 className="text-xl font-semibold text-primary mt-10 mb-3">When the DOA Guarantee is Void</h3>
+      <ul className="list-disc list-inside space-y-3 text-gray-700">
+        <li>Missed delivery or package left outside too long.</li>
+        <li>Wrong or updated address after shipping.</li>
+        <li>Orders shipped outside of standard days by request.</li>
+        <li>No DOA photos submitted within the required timeframe.</li>
+        <li>Returned, refused, or unclaimed packages.</li>
+      </ul>
+
+      <h3 className="text-xl font-semibold text-primary mt-10 mb-3">Receiving & Acclimating Your Fish</h3>
+      <p className="text-gray-700 mb-4">Follow these steps for a successful transition:</p>
+
+      <p className="text-lg font-medium text-gray-800 mt-4">Temperature Acclimation</p>
+      <ul className="list-disc list-inside space-y-2 text-gray-700">
+        <li>Float the <strong>sealed bag</strong> for <strong>15-20 minutes</strong> with lights off.</li>
+        <li>Do not open the bag during this stage.</li>
+      </ul>
+
+      <p className="text-lg font-medium text-gray-800 mt-6">Water Removal & Transfer</p>
+      <ul className="list-disc list-inside space-y-2 text-gray-700">
+        <li>Open and carefully drain water into a bucket.</li>
+        <li>Gently place the fish into your tank. A small amount of bag water is okay.</li>
+      </ul>
+
+      <p className="text-lg font-medium text-gray-800 mt-6">Post-Transfer Care</p>
+      <ul className="list-disc list-inside space-y-2 text-gray-700">
+        <li>Keep aquarium lights off for the rest of the day.</li>
+        <li>Wait until the next day before feeding your new fish.</li>
+      </ul>
+
+      <h3 className="text-xl font-semibold text-primary mt-10 mb-3">General Terms & Conditions</h3>
+
+      <p className="text-gray-700 font-medium mb-2">Fish Health & Coloration</p>
+      <ul className="list-disc list-inside space-y-3 text-gray-700">
+        <li>We <strong>do not artificially color</strong> our fish. Their colors are achieved through nutrition and optimal habitat conditions.</li>
+        <li>We cannot guarantee color or health once fish are in your system due to variable environments.</li>
+      </ul>
+
+      <p className="text-gray-700 font-medium mt-6">Refunds & Credits</p>
+      <ul className="list-disc list-inside space-y-3 text-gray-700">
+        <li>Refunds are not available for order changes or issues outside our control.</li>
+        <li><strong>Shipping fees are non-refundable</strong> in all cases.</li>
+      </ul>
+
+      <p className="text-gray-700 font-medium mt-6">Courier Selection & Shipping Rates</p>
+      <ul className="list-disc list-inside space-y-3 text-gray-700">
+        <li>We will select the most suitable courier based on your selected rate.</li>
+        <li>Preferred couriers can be noted in your order or discussed directly.</li>
+        <li>Rates may vary by location. We’ll notify you of any updates.</li>
+      </ul>
+
+      <br />
+
+      <p className="text-lg text-gray-700 mt-10 text-center">
+        Still have questions? Contact the <strong className="text-primary">iAqua Aquatics</strong> team—we’re happy to assist!
+      </p>
+    </div>
   </section>
 );
 

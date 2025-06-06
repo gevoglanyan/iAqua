@@ -1,32 +1,34 @@
 import React from 'react';
 
 const About = () => (
-  <section id="about" className="about">
-    <div className="container">
-      <div className="about-content side-by-side">
-        <div className="about-text">
-          <br /> <br />
-          <h2>About iAqua Aquatics</h2>
-          <br />
-          <p>
-            Welcome to <strong>iAqua Aquatics</strong>, your premier source for high-quality freshwater fish.
-          </p>
-          <br />
-          <p>
-            With over <strong>20 years of experience</strong> in the aquatics hobby, our team is passionate about providing healthy, vibrant fish.
-          </p>
-          <p>
-            We maintain strict quarantine protocols and only ship fish that we would be proud to keep in our own tanks.
-          </p>
-          <br />
-          <p>
-            Unlike big box stores, we hand-select our fish from trusted breeders and importers, ensuring you receive the healthiest specimens possible.
-          </p>
-          <br />
-          <p>
-            At <strong>iAqua Aquatics</strong>, we believe in building relationships with our customers. We're always available to provide advice on care, compatibility, and setup.
-          </p>
-        </div>
+  <section id="about" className="py-20 bg-white text-center">
+    <div className="max-w-4xl mx-auto px-4">
+      <h2 className="text-4xl font-extrabold text-primary mb-8 tracking-tight">About iAqua Aquatics</h2>
+      <div className="space-y-6 text-lg text-gray-700">
+        <p>
+          Welcome to <strong className="text-primary">iAqua Aquatics</strong>, your premier source for high-quality freshwater fish.
+        </p>
+        <p>
+          With over <strong className="text-primary">20 years of experience</strong> in the aquatics hobby, our team is passionate about providing healthy, vibrant fish to enthusiasts and hobbyists alike.
+        </p>
+        <p>
+          We uphold strict quarantine protocols and only ship fish that are thriving—just as we would expect for our own tanks.
+        </p>
+        <p>
+          Unlike big box stores, we work closely with trusted breeders and importers to ensure you receive the healthiest, most vibrant specimens possible.
+        </p>
+        <p>
+          At <strong className="text-primary">iAqua Aquatics</strong>, we’re more than a supplier—we’re your partners in aquatic care, always here to offer guidance on compatibility, tank setup, and long-term health.
+        </p>
+        <p>
+          iAqua Aquatics is proudly founded and operated by <strong className="text-primary">Tom</strong>, a lifelong aquarist with a sharp eye for quality and a passion for helping others build thriving aquatic environments. Whether you're new to the hobby or a seasoned fishkeeper, Tom personally ensures every order meets our highest standards.
+        </p>
+        <p>
+          We’re based in <strong className="text-primary">Santa Clarita, California</strong>, and serve aquarists nationwide with professionalism and care. Local or across the country, every interaction reflects our dedication to excellence.
+        </p>
+        <p>
+          Our team is available <strong className="text-primary">Monday through Sunday, 9:00 AM to 5:00 PM PST</strong>. Have questions about your tank, our livestock, or a custom order? Don’t hesitate to reach out—we’re here to help you create your perfect aquatic ecosystem.
+        </p>
       </div>
     </div>
   </section>

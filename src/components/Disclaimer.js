@@ -1,34 +1,31 @@
 import React from 'react';
 
 const Disclaimer = () => (
-  <section id="disclaimer" className="disclaimer">
-    <div className="container">
-      <div className="about-content side-by-side">
-        <div className="about-text">
-          <br /><br />
-          <h2>Disclaimer</h2>
-          <br />
-          <p>
-            By placing an order with <strong>iAqua Aquatics</strong>, the customer acknowledges and agrees to the following terms:
-          </p>
-          <br />
-          <ul className="disclaimer-list">
-            <li><strong>Risk of Live Animal Shipping:</strong> While we take every precaution to ensure the safe arrival of your livestock, shipping live animals inherently carries risks.</li>
-            <li><strong>No Guarantee on Survival After Delivery:</strong> Once the fish is placed in your tank, we cannot be responsible for their survival due to differences in customer tank conditions, water quality, diet, or acclimation process.</li>
-            <li><strong>No Refunds for Shipping Delays:</strong> Shipping delays caused by the courier are beyond our control. We do not issue refunds for shipping costs under any circumstances.</li>
-            <li><strong>No Responsibility for Incorrect Addresses:</strong> Customers are fully responsible for ensuring that the shipping address provided is accurate. Incorrect addresses or failed delivery attempts will void any guarantees.</li>
-            <li><strong>Final Sales on All Livestock:</strong> All sales are final once the fish has been shipped. We do not accept returns or exchanges on live animals.</li>
-            <li><strong>Customer Responsibility for Acclimation:</strong> Customers must follow proper acclimation procedures upon receiving their fish. Failure to follow these steps may lead to stress or loss of livestock.</li>
-          </ul>
-          <br />
-          <br />
-          <br />
-          <p>
-            For any questions or concerns, feel free to contact the <strong>iAqua Aquatics</strong> team. We are happy to assist you with any inquiries!
-          </p>
-        </div>
+  <section id="disclaimer" className="py-20 bg-white">
+    <div className="max-w-4xl mx-auto px-4">
+      <h2 className="text-4xl font-extrabold text-center text-primary mb-8 tracking-tight">Disclaimer</h2>
+
+      <p className="text-lg text-gray-700 mb-12">
+        By placing an order with <strong className="text-primary">iAqua Aquatics</strong>, you acknowledge and agree to the following terms:
+      </p>
+
+      <div className="text-left">
+        <ul className="list-disc list-inside space-y-5 text-gray-700 text-base">
+          <li><strong className="text-primary">Risk of Live Animal Shipping:</strong> While we take every precaution to ensure safe arrival, shipping live animals inherently carries risks.</li>
+          <li><strong className="text-primary">No Guarantee on Survival After Delivery:</strong> We cannot be responsible for survival once fish are placed in your tank due to differing conditions.</li>
+          <li><strong className="text-primary">No Refunds for Shipping Delays:</strong> We are not responsible for delays caused by couriers and do not issue shipping refunds.</li>
+          <li><strong className="text-primary">Incorrect Addresses:</strong> You are responsible for providing accurate shipping information. Errors may void guarantees.</li>
+          <li><strong className="text-primary">Final Sale on Livestock:</strong> All fish sales are final once shipped. No returns or exchanges.</li>
+          <li><strong className="text-primary">Proper Acclimation Required:</strong> Customers must follow acclimation procedures. Failure to do so may result in stress or loss of livestock.</li>
+        </ul>
       </div>
-    </div> 
+
+      <br />
+
+      <p className="text-lg text-gray-700 mt-10 text-center">
+        Questions or concerns? Contact the <strong className="text-primary">iAqua Aquatics</strong> team — we’re here to help!
+      </p>
+    </div>
   </section>
 );
 
