@@ -43,7 +43,7 @@ const Footer = () => (
       </div>
 
       <div className="text-center border-t border-white/30 pt-6 mt-12 text-sm">
-        <p>&copy; {new Date().getFullYear()} iAqua Aquatics. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} iAqua Aquatics. All Rights Reserved.</p>
       </div>
     </div>
   </footer>

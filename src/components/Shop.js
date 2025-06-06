@@ -14,7 +14,11 @@ const inventory = {
   misc: {
     'Fish Items': [{ id: 6, name: 'Breeder Net', price: 3.49 }],
     'Plant Items': [{ id: 7, name: 'Plant Fertilizer', price: 7.99 }],
-    Carbon: [{ id: 8, name: 'Activated Carbon 16oz', price: 14.99 }],
+    Carbon: [{ id: 8, name: 'iAqua Carbon - 16oz', price: 13.99 }],
+    Driftwood: [
+      { id: 10, name: 'Small Decorative Driftwood', price: 11.99 },
+      { id: 11, name: 'Large Decorative Driftwood', price: 22.99 },
+    ],
     'Fish Food': [{ id: 9, name: 'Premium Flake Food', price: 4.99 }],
   },
 };
