@@ -7,7 +7,7 @@ const ShippingPolicy = () => (
 
       <p className="text-lg text-gray-700 mb-6 text-center">
         At <strong className="text-primary">iAqua Aquatics</strong>, we are committed to providing the healthiest livestock and ensuring the best shipping experience. 
-        <br />
+        <br /> <br />
         Please review our policies carefully.
       </p>
 

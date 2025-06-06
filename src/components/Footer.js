@@ -33,7 +33,7 @@ const Footer = () => (
             <li><a href="mailto:iaquaaquatics@gmail.com" className="hover:text-purple-200">iaquaaquatics@gmail.com</a></li>
             <li><a href="tel:16616662514" className="hover:text-purple-200">(661) 666-2514</a></li>
             <br/>
-            <li>Monday - Sunday, 
+            <li>Monday - Sunday 
                 <br/>
                 9:00 AM to 5:00 PM</li>
             <br />
