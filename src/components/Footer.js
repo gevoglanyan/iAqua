@@ -36,8 +36,9 @@ const Footer = () => (
             <li><Link to="/fish" state={{ scrollTo: 'fish' }} className="hover:text-purple-200">Fish Collection</Link></li>
             <li><Link to="/plant" state={{ scrollTo: 'plant' }} className="hover:text-purple-200">Plant Collection</Link></li>
             <li><Link to="/how-to-order" className="hover:text-purple-200">How to Order</Link></li>
+            <li><Link to="/disclaimer" className="hover:text-purple-200">Disclaimer</Link></li>
+            <li><Link to="/shipping-policy" className="hover:text-purple-200">Shipping Policy</Link></li>
             <li><Link to="/about" className="hover:text-purple-200">About Us</Link></li>
-            <li><Link to="/" state={{ scrollTo: 'contact' }} className="hover:text-purple-200">Contact Us</Link></li>
           </ul>
         </div>
 
