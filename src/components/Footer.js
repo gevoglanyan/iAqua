@@ -12,6 +12,20 @@ const Footer = () => (
             Our focus is on quality, health, and exceptional service.
           </p>
           <p className="mt-8">Have questions? Reach out anytime!</p>
+
+          <br />
+
+          <p className="mt-8">
+            Created by{" "}
+            <a
+              href="https://gevoglanyan.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white-600 hover:underline"
+            >
+              Harutyun Gevoglanyan
+            </a>
+          </p>
         </div>
 
         <div>

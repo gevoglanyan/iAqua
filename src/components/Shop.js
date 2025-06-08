@@ -1,25 +1,52 @@
 import React, { useState } from 'react';
 import { useCart } from './CartContext';
+import { Link } from 'react-router-dom';
 
 const inventory = {
   fish: {
-    African: [{ id: 1, name: 'African Butterfly Fish', price: 14.99 }],
-    Betta: [{ id: 2, name: 'Betta Koi Galaxy', price: 12.99 }],
-    Tetra: [{ id: 3, name: 'Tetra Congo XL', price: 7.99 }],
+    African: [{ id: 1, name: 'African Butterfly Fish', price: 11.99 }, { id: 2, name: 'Bichir (Armored) 3"', price: 11.99 }, 
+      { id: 3, name: 'Bichir (Semegalus) 4"', price: 7.99 }, { id: 4, name: 'Bichir (Ornate)', price: 24.99 }, 
+      { id: 5, name: 'Elephant Nose', price: 19.99 }, { id: 6, name: 'Rope Fish', price: 14.99 }, { id: 7, name: 'Shrimp (Vampire)', price: 11.99 }, 
+      { id: 8, name: 'Tetra (Congo) XL', price: 6.99 }],
+    Betta: [{ id: 9, name: 'Butterfly Male Halfmoon Show (Large)', price: 11.99 }, { id: 10, name: 'Mustard Gas Halfmoon Male (Large)', price: 6.99 }, 
+      { id: 11, name: 'Rosepetal Male Halfmoon', price: 11.99 }, { id: 12, name: 'Koi Betta (Male)', price: 11.99 }],
+    Tetra: [{ id: 13, name: 'Tetra (Diamond) Large', price: 1.99 }, { id: 14, name: 'Tetra (Green Neon) Wild', price: 1.19 }],
   },
   plants: {
-    'Sword Plants': [{ id: 4, name: 'Amazon Sword', price: 5.99 }],
-    Anubias: [{ id: 5, name: 'Anubias Nana', price: 6.49 }],
+    'Sword Plants': [{ id: 100, name: 'Amazon Sword', price: 5.99 }],
+    Anubias: [{ id: 101, name: 'Anubias Nana', price: 6.49 }],
   },
   misc: {
-    'Fish Items': [{ id: 6, name: 'Breeder Net', price: 3.49 }],
-    'Plant Items': [{ id: 7, name: 'Plant Fertilizer', price: 7.99 }],
-    Carbon: [{ id: 8, name: 'iAqua Carbon - 16oz', price: 13.99 }],
-    Driftwood: [
-      { id: 10, name: 'Small Decorative Driftwood', price: 11.99 },
-      { id: 11, name: 'Large Decorative Driftwood', price: 22.99 },
+    'Fish Items': [{ id: 200, name: 'Breeder Net', price: 3.49 }],
+    'Plant Items': [{ id: 300, name: 'Plant Fertilizer', price: 7.99 }],
+    'Fish Food': [
+      { id: 400, name: 'Premium Community Flake Food (0.8 oz)', price: 2.60 },
+      { id: 401, name: 'Premium Community Flake Food (2.1 oz)', price: 4.89 },
+      { id: 402, name: 'Premium Community Flake Food (7.4 oz)', price: 11.09 },
+      { id: 403, name: 'Color Enhancing Community Flake Food (0.8 oz)', price: 3.89 },
+      { id: 404, name: 'Color Enhancing Community Flake Food (2.1 oz)', price: 6.99 },
+      { id: 405, name: 'Color Enhancing Community Flake Food (7.4 oz)', price: 19.99 },
+      { id: 406, name: 'Insect Meal Granules (1.3 oz)', price: 3.32 },
+      { id: 407, name: 'Betta Food Small Granules (0.3 oz)', price: 1.99 },
+      { id: 408, name: 'Veggie Flake Food for Vegans (2.1 oz)', price: 6.29 },
+      { id: 409, name: 'Veggie Based with a Little Protein (1.5 oz)', price: 4.89 },
+      { id: 410, name: 'Sinking Chips for Plecos and Similar (1.3 oz)', price: 3.91 },
+      { id: 411, name: 'Sinking Chips for Plecos and Similar (3.3 oz)', price: 7.92 },
+      { id: 412, name: 'Cichlid Granules w/ Color Enhancement (4.7 oz)', price: 6.95 },
+      { id: 413, name: "Krill-Based 'Stick on Glass' Treats (0.5 oz)", price: 2.63 },
+      { id: 414, name: 'Powder Food for Fry w/ Krill and Spirulina (0.8 oz)', price: 3.51 },
+      { id: 415, name: 'Fancy Shrimp Sinking Granules (1.9 oz)', price: 4.35 },
+      { id: 416, name: 'Crab and Lobster w/ Loop Shape Pellets (1.0 oz)', price: 4.35 },
+      { id: 417, name: 'Goldfish Flake Food w/ Insect Meal (2.1 oz)', price: 4.05 },
+      { id: 418, name: 'Slow Sinking Pellets for Saltwater Fish (1.5 oz)', price: 4.89 },
+      { id: 419, name: "Marine Fish Treat Tabs 'Stick on Glass' (2.1 oz)", price: 8.61 },
+      { id: 420, name: 'Discus Granules with Probiotics (3.9 oz)', price: 8.68 }
     ],
-    'Fish Food': [{ id: 9, name: 'Premium Flake Food', price: 4.99 }],
+    Carbon: [{ id: 400, name: 'iAqua Carbon (8 oz)', price: 6.99 }, { id: 401, name: 'iAqua Carbon (12 oz)', price: 8.99 }, 
+      { id: 402, name: 'iAqua Carbon (16 oz)', price: 12.99 }, { id: 403, name: 'iAqua Carbon (24 oz)', price: 18.99 }],
+    Driftwood: [
+      { id: 500, name: 'Small Decorative Driftwood', price: 11.99 }, { id: 501, name: 'Medium Decorative Driftwood', price: 16.99 }, 
+      { id: 502, name: 'Large Decorative Driftwood', price: 21.99 },],
   },
 };
 
@@ -122,6 +149,20 @@ const Shop = () => {
             : <p className="text-center text-gray-500">Select a miscellaneous category to view products.</p>
           }
         </div>
+
+        <br /> <br />
+
+        <h3 className="text-2xl font-semibold text-black mb-4 text-center">
+          Please view our{' '}
+          <Link to="/shipping-policy" className="hover:text-purple-700">
+            Shipping Policy
+          </Link>{' '}
+          and{' '}
+          <Link to="/disclaimer" className="hover:text-purple-700">
+            Disclaimers
+          </Link>{' '}
+          before Purchases
+        </h3>
       </div>
     </section>
   );
