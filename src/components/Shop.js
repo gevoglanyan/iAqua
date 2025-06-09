@@ -152,6 +152,32 @@ const Shop = () => {
 
         <br /> <br />
 
+        <div className="flex flex-col items-center gap-8 mb-12 px-4">
+          <div className="w-full max-w-md rounded-lg overflow-hidden shadow-lg">
+            <img
+              src="/images/iAqua Carbon.jpg"
+              alt="iAqua Carbon Product"
+              className="w-full h-auto object-cover"
+            />
+          </div>
+
+          <br /> <br />
+
+          <div className="w-full max-w-2xl aspect-video rounded-lg overflow-hidden shadow-lg">
+            <video
+              className="w-full h-full object-cover"
+              controls
+              muted
+              playsInline
+            >
+              <source src="/videos/iAquaMovie2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+ 
+        <br /> <br /> <br />
+        
         <h3 className="text-2xl font-semibold text-black mb-4 text-center">
           Please view our{' '}
           <Link to="/shipping-policy" className="hover:text-purple-700">

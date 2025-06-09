@@ -31,6 +31,22 @@ const About = () => (
         </p>
       </div>
     </div>
+
+    <br /> <br /> <br />
+
+    <div className="mb-10 px-4 flex justify-center">
+      <div className="w-full max-w-2xl aspect-video rounded-lg overflow-hidden shadow-lg">
+        <video
+          className="w-full h-full object-cover"
+          controls
+          muted
+          playsInline
+        >
+          <source src="/videos/iAquaMovie1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
   </section>
 );
 
