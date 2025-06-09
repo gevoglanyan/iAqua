@@ -8,6 +8,8 @@ const Checkout = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
+  const checkoutEnabled = false; // toggle this to true when ready
+
   const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2);
 
   const paypalOptions = {
@@ -77,6 +79,11 @@ const Checkout = () => {
                 <PayPalButtons
                   style={{ layout: 'vertical' }}
                   createOrder={(data, actions) => {
+                    if (!checkoutEnabled) {
+                      alert('Checkout is currently disabled. Please try again later.');
+                      return Promise.reject(); 
+                    }
+
                     setLoading(true);
                     return actions.order.create({
                       purchase_units: [
@@ -101,6 +108,8 @@ const Checkout = () => {
                     });
                   }}
                   onApprove={(data, actions) => {
+                    if (!checkoutEnabled) return Promise.resolve();
+
                     return actions.order.capture().then((details) => {
                       dispatch({ type: 'CLEAR_CART' });
                       setLoading(false);

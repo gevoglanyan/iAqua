@@ -54,7 +54,7 @@ function App() {
               <Route path="/how-to-order" element={<HowToOrder />} />
               <Route path="/disclaimer" element={<Disclaimer />} />
               <Route path="/shipping-policy" element={<ShippingPolicy />} />
-              <Route path="/" element={<Checkout />} />
+              <Route path="/checkout" element={<Checkout />} />
               <Route path="/success" element={<Success />} />
             </Routes>
           </main>
