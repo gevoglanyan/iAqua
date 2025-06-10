@@ -50,12 +50,61 @@ const inventory = {
   },
 };
 
+const ItemCard = ({ item, addToCart }) => {
+  const [quantity, setQuantity] = useState("1"); 
+
+  const handleInputChange = (e) => {
+    const val = e.target.value;
+    if (val === "" || (/^\d+$/.test(val) && Number(val) > 0)) {
+      setQuantity(val);
+    }
+  };
+
+  const handleAddToCart = () => {
+    const qty = parseInt(quantity) || 1;
+    addToCart(item, qty);
+    setQuantity("1"); 
+  };
+
+  return (
+    <div className="bg-white shadow-md rounded-lg p-6 text-center border border-gray-100 hover:shadow-xl transition w-full max-w-sm">
+      <h4 className="text-xl font-bold text-gray-800 mb-2">{item.name}</h4>
+      <p className="text-gray-600 font-medium mb-4 text-lg">${item.price.toFixed(2)}</p>
+
+      <div className="flex items-center justify-center space-x-4">
+        <div className="flex items-center space-x-2">
+          <label htmlFor={`quantity-${item.id}`} className="text-sm font-medium text-gray-700">
+            Qty:
+          </label>
+          <input
+            id={`quantity-${item.id}`}
+            type="text"
+            inputMode="numeric"
+            value={quantity}
+            onChange={handleInputChange}
+            className="w-16 px-2 py-1 border rounded text-center"
+          />
+        </div>
+
+        <button
+          onClick={handleAddToCart}
+          className="bg-primary text-white px-4 py-2 rounded-full font-semibold hover:bg-purple-700 transition whitespace-nowrap"
+        >
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  );
+};
+
+
 const Shop = () => {
   const { dispatch } = useCart();
 
   const [selectedFish, setSelectedFish] = useState([]);
   const [selectedPlants, setSelectedPlants] = useState([]);
   const [selectedMisc, setSelectedMisc] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
 
   const toggleSelection = (current, setCurrent, name) => {
     setCurrent(prev =>
@@ -63,29 +112,36 @@ const Shop = () => {
     );
   };
 
-  const addToCart = (item) => {
-    dispatch({ type: 'ADD_ITEM', payload: item });
+  const addToCart = (item, quantity) => {
+    dispatch({ type: 'ADD_ITEM', payload: { ...item, quantity } });
   };
 
-  const renderItems = (items) => (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
-      {items.map(item => (
-        <div
-          key={item.id}
-          className="bg-white shadow-md rounded-lg p-6 text-center border border-gray-100 hover:shadow-xl transition w-full max-w-sm"
-        >
-          <h4 className="text-xl font-bold text-gray-800 mb-2">{item.name}</h4>
-          <p className="text-gray-600 font-medium mb-4 text-lg">${item.price.toFixed(2)}</p>
-          <button
-            onClick={() => addToCart(item)}
-            className="bg-primary text-white px-5 py-2 rounded-full font-semibold hover:bg-purple-700 transition"
-          >
-            Add to Cart
-          </button>
-        </div>
-      ))}
-    </div>
-  );
+  const renderItems = (categoryData, selectedCategories) => {
+    return (
+      <div className="space-y-12">
+        {selectedCategories.map((categoryName) => {
+          const items = categoryData[categoryName].filter(item =>
+            item.name.toLowerCase().includes(searchQuery.toLowerCase())
+          );
+
+          if (items.length === 0) return null;
+
+          return (
+            <div key={categoryName}>
+              <h4 className="text-xl font-bold text-primary mb-4 text-center uppercase tracking-wide">
+                {categoryName}
+              </h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
+                {items.map(item => (
+                  <ItemCard key={item.id} item={item} addToCart={addToCart} />
+                ))}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    );
+  };
 
   const renderFilterButtons = (category, selected, setSelected) => (
     <div className="flex flex-wrap justify-center gap-3 mb-8">
@@ -105,9 +161,6 @@ const Shop = () => {
     </div>
   );
 
-  const combineSelected = (data, selected) =>
-    selected.flatMap(key => data[key] || []);
-
   return (
     <section id="shop" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
@@ -120,14 +173,27 @@ const Shop = () => {
 
         <br />
 
+        <div className="mb-10 text-center">
+          <input
+            type="text"
+            placeholder="Start by selecting a category, then search here..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full max-w-md px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500"
+          />
+        </div>
+
+        <br />
+
         <div className="mb-16">
           <h3 className="text-2xl font-semibold text-primary mb-4 text-center uppercase tracking-wide">Fishs</h3>
           <br />
           {renderFilterButtons(inventory.fish, selectedFish, setSelectedFish)}
           {selectedFish.length > 0
-            ? renderItems(combineSelected(inventory.fish, selectedFish))
+            ? renderItems(inventory.fish, selectedFish)
             : <p className="text-center text-gray-500">Select a fish category to view products.</p>
           }
+
         </div>
 
         <div className="mb-16">
@@ -135,9 +201,10 @@ const Shop = () => {
           <br />
           {renderFilterButtons(inventory.plants, selectedPlants, setSelectedPlants)}
           {selectedPlants.length > 0
-            ? renderItems(combineSelected(inventory.plants, selectedPlants))
+            ? renderItems(inventory.plants, selectedPlants)
             : <p className="text-center text-gray-500">Select a plant category to view products.</p>
           }
+
         </div>
 
         <div className="mb-16">
@@ -145,9 +212,10 @@ const Shop = () => {
           <br />
           {renderFilterButtons(inventory.misc, selectedMisc, setSelectedMisc)}
           {selectedMisc.length > 0
-            ? renderItems(combineSelected(inventory.misc, selectedMisc))
+            ? renderItems(inventory.misc, selectedMisc)
             : <p className="text-center text-gray-500">Select a miscellaneous category to view products.</p>
           }
+
         </div>
 
         <br /> <br />
@@ -180,11 +248,11 @@ const Shop = () => {
         
         <h3 className="text-2xl font-semibold text-black mb-4 text-center">
           Please view our{' '}
-          <Link to="/shipping-policy" className="hover:text-purple-700">
+          <Link to="/shipping-policy" className="text-purple-600 hover:text-purple-700 font-medium">
             Shipping Policy
           </Link>{' '}
           and{' '}
-          <Link to="/disclaimer" className="hover:text-purple-700">
+          <Link to="/disclaimer" className="text-purple-600 hover:text-purple-700 font-medium">
             Disclaimers
           </Link>{' '}
           before Purchases

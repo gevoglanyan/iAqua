@@ -13,10 +13,12 @@ const ShippingPolicy = () => (
 
       <h3 className="text-xl font-semibold text-primary mt-10 mb-3">Important Notes</h3>
       <ul className="list-disc list-inside space-y-3 text-gray-700">
-        <li>The fish shown in photos are for representation only and are <strong>not to scale</strong>.</li>
+        <li>All shipments are handled through <strong>Southwest Cargo</strong>.</li>
+        <li>Shipping requires a <strong>minimum order of $175</strong>, with <strong>free shipping on orders over $250</strong>.</li>
         <li>We <strong>do not ship livestock to Canada</strong>.</li>
         <li>Shipping days are <strong>Monday, Tuesday, and Wednesday</strong> after your order is placed.</li>
         <li>Delivery estimates are approximate; always refer to your tracking number for details.</li>
+        <li>Local delivery is available for <strong>$75 within a 50-mile radius</strong> of Santa Clarita, or <strong>$175 beyond 50 miles</strong>.</li>
       </ul>
 
       <h3 className="text-xl font-semibold text-primary mt-10 mb-3">Shipping Risks & DOA Policy</h3>

@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js';
 import { useCart } from './CartContext';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Checkout = () => {
   const { cart, dispatch } = useCart();
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
-  const checkoutEnabled = false; // toggle this to true when ready
+  const checkoutEnabled = false; // Toggle 
 
   const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2);
 
@@ -67,6 +68,22 @@ const Checkout = () => {
                 Total: ${total}
               </div>
             </div>
+
+            <br /> <br /> <br />
+        
+            <h3 className="text-2xl font-semibold text-black mb-4 text-center">
+              Please view our{' '}
+              <Link to="/shipping-policy" className="text-purple-600 hover:text-purple-700 font-medium">
+                  Shipping Policy
+              </Link>{' '}
+              and{' '}
+              <Link to="/disclaimer" className="text-purple-600 hover:text-purple-700 font-medium">
+                Disclaimers
+              </Link>{' '}
+            before Purchases
+            </h3>
+
+            <br /> <br />
 
             <div className="mt-12 relative z-0">
               <PayPalScriptProvider options={paypalOptions}>

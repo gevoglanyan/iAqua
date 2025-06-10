@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from './CartContext';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,14 +32,20 @@ const Header = () => {
 
   return (
     <header className="bg-primary text-white shadow-md z-50">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <button
-          className="text-3xl md:hidden focus:outline-none ml-auto"
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          {isOpen ? '✖' : '☰'}
-        </button>
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative">
+        <div className="md:hidden">
+          <Link
+            to="/checkout"
+            className="flex items-center gap-2 text-2xl font-bold hover:text-purple-200"
+          >
+            <FontAwesomeIcon icon={faShoppingCart} className="w-6 h-6" />
+            {totalItems > 0 && (
+              <span className="ml-1 px-2 py-0.5 bg-white text-primary rounded-full text-sm font-bold">
+                {totalItems}
+              </span>
+            )}
+          </Link>
+        </div>
 
         <ul className="hidden md:flex items-center gap-8 text-lg font-medium text-center mx-auto">
           <li><Link to="/" state={{ scrollTo: 'top' }} className="hover:text-purple-200">Home</Link></li>
@@ -48,12 +56,28 @@ const Header = () => {
           <li><Link to="/disclaimer" className="hover:text-purple-200">Disclaimer</Link></li>
           <li><Link to="/shipping-policy" className="hover:text-purple-200">Shipping Policy</Link></li>
           <li><Link to="/about" className="hover:text-purple-200">About Us</Link></li>
-          <li>
-            <Link to="/checkout" className="hover:text-purple-200">
-              Your Cart {totalItems > 0 && <span>({totalItems})</span>}
-            </Link>
-          </li>
         </ul>
+
+        <div className="hidden md:flex items-center gap-4">
+          <Link
+            to="/checkout"
+            className="flex items-center gap-2 text-2xl font-bold hover:text-purple-200"
+          >
+            <FontAwesomeIcon icon={faShoppingCart} className="w-6 h-6" />
+            {totalItems > 0 && (
+              <span className="ml-1 px-2 py-0.5 bg-white text-primary rounded-full text-sm font-bold">
+                {totalItems}
+              </span>
+            )}
+          </Link>
+        </div>
+        <button
+          className="text-3xl md:hidden focus:outline-none"
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+          {isOpen ? '✖' : '☰'}
+        </button>
       </div>
 
       {isOpen && (
@@ -63,7 +87,7 @@ const Header = () => {
             onClick={toggleMenu}
             aria-label="Close menu"
           >
-            X
+            ✖
           </button>
 
           <ul className="flex flex-col gap-6 text-lg font-medium text-center">
@@ -75,11 +99,6 @@ const Header = () => {
             <li><Link to="/disclaimer" onClick={closeMenu} className="hover:text-purple-200">Disclaimer</Link></li>
             <li><Link to="/shipping-policy" onClick={closeMenu} className="hover:text-purple-200">Shipping Policy</Link></li>
             <li><Link to="/about" onClick={closeMenu} className="hover:text-purple-200">About Us</Link></li>
-            <li>
-              <Link to="/checkout" onClick={closeMenu} className="hover:text-purple-200">
-                Your Cart {totalItems > 0 && <span>({totalItems})</span>}
-              </Link>
-            </li>
           </ul>
         </nav>
       )}
