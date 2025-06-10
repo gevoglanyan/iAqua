@@ -16,7 +16,7 @@ const SuccessPage = () => {
         You’ll receive an email confirmation shortly with your order details and shipping information.
       </p>
 
-      <br />
+      <br /> <br />
       
       <p className="text-lg text-gray-700">
         If you have any questions or special requests, feel free to reach out at <a href="mailto:iaquaaquatics@gmail.com" className="text-primary font-medium hover:underline">iaquaaquatics@gmail.com</a>.

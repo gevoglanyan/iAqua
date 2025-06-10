@@ -91,7 +91,14 @@ const ShippingPolicy = () => (
       <br />
 
       <p className="text-lg text-gray-700 mt-10 text-center">
-        Still have questions? Contact the <strong className="text-primary">iAqua Aquatics</strong> team—we’re happy to assist!
+        Still have questions? Contact the{' '}
+        <a
+          href="mailto:iaquaaquatics@gmail.com "
+          className="text-primary font-semibold hover:underline"
+        >
+          iAqua Aquatics
+        </a>{' '}
+        team—we’re happy to assist!
       </p>
     </div>
   </section>
