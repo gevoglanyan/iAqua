@@ -87,7 +87,7 @@ const Header = () => {
             onClick={toggleMenu}
             aria-label="Close menu"
           >
-            ✖
+            X
           </button>
 
           <ul className="flex flex-col gap-6 text-lg font-medium text-center">

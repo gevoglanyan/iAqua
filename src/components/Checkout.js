@@ -83,7 +83,7 @@ const Checkout = () => {
             before Purchases
             </h3>
 
-            <br /> <br />
+            <br /> 
 
             <div className="mt-12 relative z-0">
               <PayPalScriptProvider options={paypalOptions}>
