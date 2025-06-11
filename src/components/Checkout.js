@@ -9,9 +9,11 @@ const Checkout = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
-  const checkoutEnabled = false; // Toggle 
+  const total = parseFloat(
+    cart.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2)
+  );
 
-  const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2);
+  const checkoutEnabled = total >= 175;
 
   const paypalOptions = {
     'client-id': 'sb',
@@ -65,7 +67,7 @@ const Checkout = () => {
               ))}
 
               <div className="text-right text-xl font-bold text-gray-800 pt-2">
-                Total: ${total}
+                Total: ${total.toFixed(2)}
               </div>
             </div>
 
@@ -74,18 +76,25 @@ const Checkout = () => {
             <h3 className="text-2xl font-semibold text-black mb-4 text-center">
               Please view our{' '}
               <Link to="/shipping-policy" className="text-purple-600 hover:text-purple-700 font-medium">
-                  Shipping Policy
+                Shipping Policy
               </Link>{' '}
               and{' '}
               <Link to="/disclaimer" className="text-purple-600 hover:text-purple-700 font-medium">
                 Disclaimers
               </Link>{' '}
-            before Purchases
+              before Purchases
             </h3>
 
-            <br /> 
+            <br />
 
             <div className="mt-12 relative z-0">
+              {!checkoutEnabled && (
+                <div className="text-center text-purple-500 font-medium mb-4">
+                  A minimum purchase of $175 is required to proceed to checkout.
+                  <br /> <br />
+                </div>
+              )}
+
               <PayPalScriptProvider options={paypalOptions}>
                 {loading && (
                   <div className="text-center text-gray-600 mb-4">
@@ -95,17 +104,20 @@ const Checkout = () => {
 
                 <PayPalButtons
                   style={{ layout: 'vertical' }}
+                  forceReRender={[total, checkoutEnabled]}
+                  disabled={!checkoutEnabled}
                   createOrder={(data, actions) => {
                     if (!checkoutEnabled) {
-                      alert('Checkout is currently disabled. Please try again later.');
-                      return Promise.reject(); 
+                      alert('A minimum purchase of $175 is required to checkout.');
+                      return Promise.reject();
                     }
 
                     setLoading(true);
+
                     return actions.order.create({
                       purchase_units: [
                         {
-                          amount: { value: total },
+                          amount: { value: total.toFixed(2) },
                           shipping: {
                             options: [
                               {

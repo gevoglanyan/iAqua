@@ -4,21 +4,107 @@ import { Link } from 'react-router-dom';
 
 const inventory = {
   fish: {
-    African: [{ id: 1, name: 'African Butterfly Fish', price: 11.99 }, { id: 2, name: 'Bichir (Armored) 3"', price: 11.99 }, 
-      { id: 3, name: 'Bichir (Semegalus) 4"', price: 7.99 }, { id: 4, name: 'Bichir (Ornate)', price: 24.99 }, 
-      { id: 5, name: 'Elephant Nose', price: 19.99 }, { id: 6, name: 'Rope Fish', price: 14.99 }, { id: 7, name: 'Shrimp (Vampire)', price: 11.99 }, 
-      { id: 8, name: 'Tetra (Congo) XL', price: 6.99 }],
-    Betta: [{ id: 9, name: 'Butterfly Male Halfmoon Show (Large)', price: 11.99 }, { id: 10, name: 'Mustard Gas Halfmoon Male (Large)', price: 6.99 }, 
-      { id: 11, name: 'Rosepetal Male Halfmoon', price: 11.99 }, { id: 12, name: 'Koi Betta (Male)', price: 11.99 }],
-    Tetra: [{ id: 13, name: 'Tetra (Diamond) Large', price: 1.99 }, { id: 14, name: 'Tetra (Green Neon) Wild', price: 1.19 }],
+    African: [
+    { id: 1, name: 'African Butterfly Fish', price: 11.99 },
+    { id: 2, name: 'Bichir (Armored) 3"', price: 11.99 },
+    { id: 3, name: 'Bichir (Semegalus) 4"', price: 7.99 },
+    { id: 4, name: 'Bichir (Ornate)', price: 24.99 },
+    { id: 5, name: 'Elephant Nose', price: 19.99 },
+    { id: 6, name: 'Rope Fish', price: 14.99 },
+    { id: 7, name: 'Shrimp (Vampire)', price: 11.99 },
+    {
+      id: 5000,
+      name: 'Tetra (Congo) Medium',
+      price: 2.99,
+      pricingTiers: [
+        { min: 10, max: 30, price: 2.79 }
+      ]
+    },
+    { id: 8, name: 'Tetra (Congo) XL', price: 6.99 },
+    {
+      id: 5001,
+      name: 'Blond Dwarf Frog (Male)',
+      price: 1.99,
+      pricingTiers: [
+        { min: 15, max: 50, price: 1.79 }
+      ]
+    },
+    {
+      id: 5002,
+      name: 'African Dwarf Frog (Male)',
+      price: 1.89,
+      pricingTiers: [
+        { min: 12, max: 50, price: 1.69 }
+      ]
+    },
+    {
+      id: 5003,
+      name: 'Leaf Fish (Leopard)',
+      price: 5.99,
+      pricingTiers: [
+        { min: 4, max: 10, price: 5.49 }
+      ]
+    },
+    {
+      id: 5004,
+      name: 'Puffer (Fahaka)',
+      price: 11.99,
+      pricingTiers: [
+        { min: 4, max: 10, price: 10.99 }
+      ]
+    }
+  ],
+    Betta: [
+      { id: 9, name: 'Butterfly Male Halfmoon Show (Large)', price: 11.99 }, 
+      { id: 10, name: 'Mustard Gas Halfmoon Male (Large)', price: 6.99 }, 
+      { id: 11, name: 'Rosepetal Male Halfmoon', price: 11.99 }, 
+      { id: 12, name: 'Koi Betta (Male)', price: 11.99 },
+      {
+        id: 5005,
+        name: 'Crowntail Betta (Male)',
+        price: 3.49,
+        pricingTiers: [
+          { min: 10, max: 24, price: 2.99 }
+        ]
+      },
+      {
+        id: 5006,
+        name: 'Halfmoon Fancy Betta (Male)',
+        price: 5.99,
+        pricingTiers: [
+          { min: 6, max: 20, price: 5.49 }
+        ]
+      },
+      {
+        id: 5007,
+        name: 'Dumbo Ear Halfmoon Betta (Male)',
+        price: 8.99,
+        pricingTiers: [
+          { min: 4, max: 15, price: 8.29 }
+        ]
+      }
+    ],
+      
+    Tetra: [
+      { id: 13, name: 'Tetra (Diamond) Large', price: 1.99 }, 
+      { id: 14, name: 'Tetra (Green Neon) Wild', price: 1.19 }
+    ],
   },
   plants: {
-    'Sword Plants': [{ id: 100, name: 'Amazon Sword', price: 5.99 }],
-    Anubias: [{ id: 101, name: 'Anubias Nana', price: 6.49 }],
+    'Sword Plants': [
+      { id: 100, name: 'Amazon Sword', price: 5.99 }
+    ],
+    Anubias: [
+      { id: 101, name: 'Anubias Nana', price: 6.49 }
+    ],
   },
   misc: {
-    'Fish Items': [{ id: 200, name: 'Breeder Net', price: 3.49 }],
-    'Plant Items': [{ id: 300, name: 'Plant Fertilizer', price: 7.99 }],
+    'Fish Items': [
+      { id: 200, name: 'Breeder Net', price: 3.49 }
+    ],
+    'Plant Items': [
+      { id: 300, name: 'Plant Fertilizer', price: 7.99 }
+    ],
     'Fish Food': [
       { id: 400, name: 'Premium Community Flake Food (0.8 oz)', price: 2.60 },
       { id: 401, name: 'Premium Community Flake Food (2.1 oz)', price: 4.89 },
@@ -42,11 +128,17 @@ const inventory = {
       { id: 419, name: "Marine Fish Treat Tabs 'Stick on Glass' (2.1 oz)", price: 8.61 },
       { id: 420, name: 'Discus Granules with Probiotics (3.9 oz)', price: 8.68 }
     ],
-    Carbon: [{ id: 400, name: 'iAqua Carbon (8 oz)', price: 6.99 }, { id: 401, name: 'iAqua Carbon (12 oz)', price: 8.99 }, 
-      { id: 402, name: 'iAqua Carbon (16 oz)', price: 12.99 }, { id: 403, name: 'iAqua Carbon (24 oz)', price: 18.99 }],
+    Carbon: [
+      { id: 400, name: 'iAqua Carbon (8 oz)', price: 6.99 }, 
+      { id: 401, name: 'iAqua Carbon (12 oz)', price: 8.99 }, 
+      { id: 402, name: 'iAqua Carbon (16 oz)', price: 12.99 }, 
+      { id: 403, name: 'iAqua Carbon (24 oz)', price: 18.99 }
+    ],
     Driftwood: [
-      { id: 500, name: 'Small Decorative Driftwood', price: 11.99 }, { id: 501, name: 'Medium Decorative Driftwood', price: 16.99 }, 
-      { id: 502, name: 'Large Decorative Driftwood', price: 21.99 },],
+      { id: 500, name: 'Small Decorative Driftwood', price: 11.99 }, 
+      { id: 501, name: 'Medium Decorative Driftwood', price: 16.99 }, 
+      { id: 502, name: 'Large Decorative Driftwood', price: 21.99 },
+    ],
   },
 };
 
@@ -62,14 +154,42 @@ const ItemCard = ({ item, addToCart }) => {
 
   const handleAddToCart = () => {
     const qty = parseInt(quantity) || 1;
-    addToCart(item, qty);
-    setQuantity("1"); 
+    const finalPrice = getTieredPrice(item, qty);
+    addToCart({ ...item, price: finalPrice }, qty);
   };
+
+  const getTieredPrice = (item, quantity) => {
+    if (!item.pricingTiers) return item.price;
+
+    const tier = item.pricingTiers.find(
+      t => quantity >= t.min && quantity <= (t.max ?? Infinity)
+    );
+
+    return tier ? tier.price : item.price;
+  };
+
 
   return (
     <div className="bg-white shadow-md rounded-lg p-6 text-center border border-gray-100 hover:shadow-xl transition w-full max-w-sm">
       <h4 className="text-xl font-bold text-gray-800 mb-2">{item.name}</h4>
-      <p className="text-gray-600 font-medium mb-4 text-lg">${item.price.toFixed(2)}</p>
+      <p className="text-gray-600 font-medium mb-4 text-lg">
+        ${getTieredPrice(item, parseInt(quantity) || 1).toFixed(2)}
+      </p>
+
+      {item.pricingTiers && (
+        <div className="text-sm text-gray-500">
+          {item.pricingTiers.map((tier, idx) => (
+            <p key={idx}>
+              {tier.min}–{tier.max || '∞'}: ${tier.price.toFixed(2)}
+            </p>
+          ))}
+          <p>
+            Other: ${item.price.toFixed(2)}
+          </p>
+
+          <br />
+        </div>
+      )}
 
       <div className="flex items-center justify-center space-x-4">
         <div className="flex items-center space-x-2">
@@ -176,7 +296,7 @@ const Shop = () => {
         <div className="mb-10 text-center">
           <input
             type="text"
-            placeholder="Start by selecting a category, then search here..."
+            placeholder="Start by selecting a category, then search for items"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full max-w-md px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500"
