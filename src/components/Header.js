@@ -33,7 +33,15 @@ const Header = () => {
   return (
     <header className="bg-primary text-white shadow-md z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative">
-        <div className="md:hidden">
+        <div className="md:hidden flex justify-between items-center w-full">
+          <button
+            className="text-3xl focus:outline-none"
+            onClick={toggleMenu}
+            aria-label="Toggle menu"
+          >
+            {isOpen ? '✖' : '☰'}
+          </button>
+
           <Link
             to="/checkout"
             className="flex items-center gap-2 text-2xl font-bold hover:text-purple-200"
@@ -71,13 +79,6 @@ const Header = () => {
             )}
           </Link>
         </div>
-        <button
-          className="text-3xl md:hidden focus:outline-none"
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          {isOpen ? '✖' : '☰'}
-        </button>
       </div>
 
       {isOpen && (

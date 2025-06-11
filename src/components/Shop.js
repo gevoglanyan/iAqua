@@ -82,12 +82,204 @@ const inventory = {
         pricingTiers: [
           { min: 4, max: 15, price: 8.29 }
         ]
+      },
+      {
+        id: 5008,
+        name: 'Koi Plakat Betta (Female)',
+        price: 4.99,
+        pricingTiers: [
+          { min: 6, max: 15, price: 4.49 }
+        ]
+      },
+      {
+        id: 5009,
+        name: 'Show Betta (Female)',
+        price: 1.99,
+        pricingTiers: [
+          { min: 10, max: 50, price: 1.79 }
+        ]
+      },
+      {
+        id: 5010,
+        name: 'Halfmoon Betta (Female) Large',
+        price: 3.99,
+        pricingTiers: [
+          { min: 6, max: 15, price: 3.49 }
+        ]
+      },
+      {
+        id: 5011,
+        name: 'Show Betta (Male)',
+        price: 2.29,
+        pricingTiers: [
+         { min: 30, price: 1.99 }
+        ]
       }
     ],
       
     Tetra: [
       { id: 13, name: 'Tetra (Diamond) Large', price: 1.99 }, 
-      { id: 14, name: 'Tetra (Green Neon) Wild', price: 1.19 }
+      { id: 14, name: 'Tetra (Green Neon) Wild', price: 1.19 },
+      {
+        id: 5012,
+        name: 'Tetra (Amandae) Ember',
+        price: 1.19,
+        pricingTiers: [
+         { min: 25, max: 50, price: 1.09 }
+        ]
+      },
+      {
+        id: 5013,
+        name: 'Tetra (Black Neon)',
+        price: 1.19,
+        pricingTiers: [
+         { min: 20, max: 40, price: 1.09 }
+        ]
+      },
+      {
+        id: 5014,
+        name: 'Tetra (Black Phantom)',
+        price: 1.29,
+        pricingTiers: [
+         { min: 20, max: 50, price: 1.19 }
+        ]
+      },
+      {
+        id: 5015,
+        name: 'Tetra (Cardinal)',
+        price: 1.89,
+        pricingTiers: [
+         { min: 20, max: 50, price: 1.69 }
+        ]
+      },
+      {
+        id: 5016,
+        name: 'Tetra (Congo) Medium',
+        price: 2.99,
+        pricingTiers: [
+         { min: 8, max: 40, price: 2.79 }
+        ]
+      },
+      {
+        id: 5017,
+        name: 'Tetra (Congo) Large',
+        price: 6.99,
+        pricingTiers: [
+         { min: 8, max: 40, price: 6.49 }
+        ]
+      },
+      {
+        id: 5018,
+        name: 'Tetra (Emperor)',
+        price: 1.49,
+        pricingTiers: [
+         { min: 20, max: 50, price: 1.29 }
+        ]
+      },
+      {
+        id: 5019,
+        name: 'Tetra (Emperor Blue)',
+        price: 1.89,
+        pricingTiers: [
+         { min: 20, max: 50, price: 1.69 }
+        ]
+      },
+      {
+        id: 5020,
+        name: 'Tetra (Emperor Purple)',
+        price: 1.69,
+        pricingTiers: [
+         { min: 20, max: 50, price: 1.49 }
+        ]
+      },
+      {
+        id: 5021,
+        name: 'Tetra (Glass Bloodfin)',
+        price: 1.29,
+        pricingTiers: [
+         { min: 20, max: 50, price: 1.19 }
+        ]
+      },
+      {
+        id: 5022,
+        name: 'Tetra (Glowlite)',
+        price: 0.99,
+        pricingTiers: [
+         { min: 20, max: 50, price: 0.89 }
+        ]
+      },
+      {
+        id: 5023,
+        name: 'Tetra (Gold)',
+        price: 1.29,
+        pricingTiers: [
+         { min: 20, max: 50, price: 1.19 }
+        ]
+      },
+      {
+        id: 5024,
+        name: 'Tetra (Green Neon) Tank Raised',
+        price: 1.99,
+        pricingTiers: [
+         { min: 25, max: 100, price: 1.79 }
+        ]
+      },
+      {
+        id: 5025,
+        name: 'Tetra (Lemon) Medium',
+        price: 1.19,
+        pricingTiers: [
+         { min: 20, max: 100, price: 1.09 }
+        ]
+      },
+      {
+        id: 5026,
+        name: 'Tetra (Neon) Medium',
+        price: 0.99,
+        pricingTiers: [
+         { min: 40, max: 100, price: 0.89 }
+        ]
+      },
+      {
+        id: 5027,
+        name: 'Tetra (Neon) Large',
+        price: 1.29,
+        pricingTiers: [
+         { min: 25, max: 50, price: 1.19 }
+        ]
+      },
+      {
+        id: 5028,
+        name: 'Tetra (Red Phantom)',
+        price: 1.49,
+        pricingTiers: [
+         { min: 20, max: 50, price: 1.29 }
+        ]
+      },
+      {
+        id: 5029,
+        name: 'Tetra (Rummynose)',
+        price: 1.69,
+        pricingTiers: [
+         { min: 20, max: 50, price: 1.49 }
+        ]
+      },
+      {
+        id: 5029,
+        name: 'Tetra (Serpae) Red Minor',
+        price: 1.09,
+        pricingTiers: [
+         { min: 20, max: 50, price: 0.99 }
+        ]
+      },
+      {
+        id: 5030,
+        name: 'Tetra (Silvertip)',
+        price: 1.09,
+        pricingTiers: [
+         { min: 20, max: 50, price: 0.99 }
+        ]
+      }
     ],
   },
   plants: {
@@ -296,7 +488,7 @@ const Shop = () => {
         <div className="mb-10 text-center">
           <input
             type="text"
-            placeholder="Start by selecting a category, then search for items"
+            placeholder="Start by selecting a category, then search for specific items"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full max-w-md px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500"
