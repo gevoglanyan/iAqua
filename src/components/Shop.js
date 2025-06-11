@@ -116,6 +116,91 @@ const inventory = {
         ]
       }
     ],
+
+    Angels: [
+      { id: 15, name: 'Angel (Assort) Medium', price: 2.99 }, 
+      { id: 16, name: 'Angel (Assort Veil) XL', price: 8.99 },
+      {
+        id: 5031,
+        name: 'Angel (Full Black) Medium',
+        price: 5.49,
+        pricingTiers: [
+         { min: 6, max: 15, price: 5.49 }
+        ]
+      },
+      { id: 17, name: 'Angel (Black Veil)', price: 7.99 }, 
+      { id: 18, name: 'Angel (Blue Pinoy) Large', price: 12.99 },
+      {
+        id: 5032,
+        name: 'Angel (Blue Zebra) Medium',
+        price: 8.99,
+        pricingTiers: [
+         { min: 5, max: 15, price: 8.29 }
+        ]
+      },
+      {
+        id: 5033,
+        name: 'Angel (Gold Marble) Medium',
+        price: 5.99,
+        pricingTiers: [
+         { min: 6, max: 15, price: 5.49 }
+        ]
+      }, 
+      {
+        id: 5034,
+        name: 'Angel (Marble) Medium',
+        price: 4.99,
+        pricingTiers: [
+         { min: 6, max: 15, price: 4.49 }
+        ]
+      }, 
+      {
+        id: 5035,
+        name: 'Angel (Half Black Veil) Medium',
+        price: 5.99,
+        pricingTiers: [
+         { min: 6, max: 15, price: 5.49 }
+        ]
+      }, 
+      {
+        id: 5036,
+        name: 'Angel (Koi) Medium',
+        price: 5.99,
+        pricingTiers: [
+         { min: 6, max: 15, price: 5.49 }
+        ]
+      },
+      {
+        id: 5037,
+        name: 'Angel (Leopard) Large',
+        price: 5.99,
+        pricingTiers: [
+         { min: 6, max: 15, price: 5.49 }
+        ]
+      },
+      {
+        id: 5038,
+        name: 'Angel (Platinum) Large',
+        price: 5.99,
+        pricingTiers: [
+         { min: 6, max: 15, price: 5.49 }
+        ]
+      },
+      { id: 19, name: 'Angel (Manacapuru)', price: 14.99 },
+      {
+        id: 5039,
+        name: 'Angel (Wild Silver) Large',
+        price: 7.99,
+        pricingTiers: [
+         { min: 6, max: 12, price: 7.29 }
+        ]
+      },
+
+    ],
+    Discus: [
+      { id: 20, name: 'Discus (Blue Turquoise) 3"', price: 34.99 },
+      { id: 21, name: 'Discus (Red Turquoise) 3"', price: 34.99 }
+    ],
       
     Tetra: [
       { id: 13, name: 'Tetra (Diamond) Large', price: 1.99 }, 
