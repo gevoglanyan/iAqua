@@ -16,7 +16,7 @@ const Checkout = () => {
   const checkoutEnabled = total >= 175;
 
   const paypalOptions = {
-    'client-id': 'sb',
+    'client-id': process.env.REACT_APP_PAYPAL_CLIENT_ID,
     currency: 'USD',
     'enable-funding': 'venmo,card',
   };
@@ -98,7 +98,8 @@ const Checkout = () => {
               <PayPalScriptProvider options={paypalOptions}>
                 {loading && (
                   <div className="text-center text-gray-600 mb-4">
-                    Processing your payment...
+                    Processing your payment.
+                    <br /> <br/>
                   </div>
                 )}
 
