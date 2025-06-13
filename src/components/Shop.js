@@ -5,55 +5,61 @@ import { Link } from 'react-router-dom';
 const inventory = {
   fish: {
     African: [
-    { id: 1, name: 'African Butterfly Fish', price: 11.99 },
-    { id: 2, name: 'Bichir (Armored) 3"', price: 11.99 },
-    { id: 3, name: 'Bichir (Semegalus) 4"', price: 7.99 },
-    { id: 4, name: 'Bichir (Ornate)', price: 24.99 },
-    { id: 5, name: 'Elephant Nose', price: 19.99 },
-    { id: 6, name: 'Rope Fish', price: 14.99 },
-    { id: 7, name: 'Shrimp (Vampire)', price: 11.99 },
-    {
-      id: 5000,
-      name: 'Tetra (Congo) Medium',
-      price: 2.99,
-      pricingTiers: [
-        { min: 10, max: 30, price: 2.79 }
-      ]
-    },
-    { id: 8, name: 'Tetra (Congo) XL', price: 6.99 },
-    {
-      id: 5001,
-      name: 'Blond Dwarf Frog (Male)',
-      price: 1.99,
-      pricingTiers: [
-        { min: 15, max: 50, price: 1.79 }
-      ]
-    },
-    {
-      id: 5002,
-      name: 'African Dwarf Frog (Male)',
-      price: 1.89,
-      pricingTiers: [
-        { min: 12, max: 50, price: 1.69 }
-      ]
-    },
-    {
-      id: 5003,
-      name: 'Leaf Fish (Leopard)',
-      price: 5.99,
-      pricingTiers: [
-        { min: 4, max: 10, price: 5.49 }
-      ]
-    },
-    {
-      id: 5004,
-      name: 'Puffer (Fahaka)',
-      price: 11.99,
-      pricingTiers: [
-        { min: 4, max: 10, price: 10.99 }
-      ]
-    }
-  ],
+      { id: 1, name: 'African Butterfly Fish', price: 11.99 },
+      { id: 2, name: 'Bichir (Armored) 3"', price: 11.99 },
+      { id: 3, name: 'Bichir (Semegalus) 4"', price: 7.99 },
+      { id: 4, name: 'Bichir (Ornate)', price: 24.99 },
+      { id: 5, name: 'Elephant Nose', price: 19.99 },
+      { id: 6, name: 'Rope Fish', price: 14.99 },
+      { id: 7, name: 'Shrimp (Vampire)', price: 11.99 },
+      {
+        id: 5000,
+        name: 'Tetra (Congo) Medium',
+        price: 2.99,
+        pricingTiers: [
+          { min: 10, max: 30, price: 2.79 }
+        ]
+      },
+      { id: 8, name: 'Tetra (Congo) XL', price: 6.99 },
+      {
+        id: 5001,
+        name: 'Blond Dwarf Frog (Male)',
+        price: 1.99,
+        pricingTiers: [
+          { min: 15, max: 50, price: 1.79 }
+        ]
+      },
+      {
+        id: 5002,
+        name: 'African Dwarf Frog (Male)',
+        price: 1.89,
+        pricingTiers: [
+          { min: 12, max: 50, price: 1.69 }
+        ]
+      },
+      {
+        id: 5003,
+        name: 'Leaf Fish (Leopard)',
+        price: 5.99,
+        pricingTiers: [
+          { min: 4, max: 10, price: 5.49 }
+        ]
+      },
+      {
+        id: 5004,
+        name: 'Puffer (Fahaka)',
+        price: 11.99,
+        pricingTiers: [
+          { min: 4, max: 10, price: 10.99 }
+        ]
+      }
+    ],
+    Barbs: [
+
+    ],
+    Rasboras: [
+
+    ],
     Betta: [
       { id: 9, name: 'Butterfly Male Halfmoon Show (Large)', price: 11.99 }, 
       { id: 10, name: 'Mustard Gas Halfmoon Male (Large)', price: 6.99 }, 
@@ -195,6 +201,9 @@ const inventory = {
          { min: 6, max: 12, price: 7.29 }
         ]
       },
+
+    ],
+    Cichlids: [
 
     ],
     Discus: [
@@ -374,6 +383,18 @@ const inventory = {
     Anubias: [
       { id: 101, name: 'Anubias Nana', price: 6.49 }
     ],
+    Cryptocoryne: [
+      
+    ],
+    Vallisneria: [
+
+    ],
+    Apongeton: [
+
+    ],
+    Terrarium: [
+
+    ]
   },
   misc: {
     'Fish Items': [
