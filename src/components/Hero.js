@@ -23,7 +23,25 @@ const Hero = () => {
           Discover a vibrant underwater world with our hand-selected aquatic life. From stunning centerpiece fish to lush aquatic plants, we bring the best of the aquatics hobby to your home.
         </p>
 
-        <br /> 
+        <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 mt-10 max-w-2xl mx-auto text-center shadow-sm">
+        <h3 className="text-2xl font-extrabold text-primary mb-3">iAqua Aquatics Preorder List</h3>
+
+        <br />
+
+        <p className="text-gray-700 text-base leading-relaxed">
+          Simply pick the fish you need — with fixed price and quantity — by any 
+          <span className="font-bold text-primary"> Tuesday afternoon</span>, and you’ll receive them the following 
+          <span className="font-bold text-primary"> Tuesday</span>.
+          <span className="block mt-1">
+            Local pickups are available on <span className="font-bold text-primary">Monday</span>.
+          </span>
+        </p>
+        <p className="text-gray-700 text-base leading-relaxed mt-3">
+          We offer exceptional <span className="font-bold text-primary">SOUTHWEST shipping</span> within the Domestic USA. You can pack a large number of transship items into one box for added value.
+        </p>
+      </div>
+
+      <br /> <br />
 
         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-8 mb-16">
           <Link to="/shop" className="bg-primary text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition font-medium">Explore Our Shop</Link>

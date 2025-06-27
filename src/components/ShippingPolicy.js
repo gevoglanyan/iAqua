@@ -11,7 +11,7 @@ const ShippingPolicy = () => (
         Please review our policies carefully.
       </p>
 
-      <h3 className="text-xl font-semibold text-primary mt-10 mb-3">Important Notes</h3>
+      <h3 className="text-xl font-bold text-primary mt-10 mb-3">Important Notes</h3>
       <ul className="list-disc list-inside space-y-3 text-gray-700">
         <li>All shipments are handled through <strong>Southwest Cargo</strong>.</li>
         <li>Shipping requires a <strong>minimum order of $175</strong>, with <strong>free shipping on orders over $250</strong>.</li>
@@ -21,14 +21,14 @@ const ShippingPolicy = () => (
         <li>Local delivery is available for <strong>$75 within a 50-mile radius</strong> of Santa Clarita, or <strong>$175 beyond 50 miles</strong>.</li>
       </ul>
 
-      <h3 className="text-xl font-semibold text-primary mt-10 mb-3">Shipping Risks & DOA Policy</h3>
+      <h3 className="text-xl font-bold text-primary mt-10 mb-3">Shipping Risks & DOA Policy</h3>
       <p className="text-gray-700 mb-4">Shipping live animals carries risk. Please review our <strong>DOA (Dead on Arrival)</strong> policy:</p>
       <ul className="list-disc list-inside space-y-3 text-gray-700">
         <li><strong>Applies to U.S. Orders Only.</strong></li>
         <li><strong>Still valid during weather or courier delays.</strong></li>
       </ul>
 
-      <h3 className="text-xl font-semibold text-primary mt-10 mb-3">DOA Credit Conditions</h3>
+      <h3 className="text-xl font-bold text-primary mt-10 mb-3">DOA Credit Conditions</h3>
       <ul className="list-disc list-inside space-y-3 text-gray-700">
         <li>Store credit will be issued for any DOA cases.</li>
         <li><strong>Shipping charges are non-refundable.</strong></li>
@@ -37,7 +37,7 @@ const ShippingPolicy = () => (
         <li>Float the sealed bag in your tank and take a clear photo.</li>
       </ul>
 
-      <h3 className="text-xl font-semibold text-primary mt-10 mb-3">When the DOA Guarantee is Void</h3>
+      <h3 className="text-xl font-bold text-primary mt-10 mb-3">When the DOA Guarantee is Void</h3>
       <ul className="list-disc list-inside space-y-3 text-gray-700">
         <li>Missed delivery or package left outside too long.</li>
         <li>Wrong or updated address after shipping.</li>
@@ -46,7 +46,7 @@ const ShippingPolicy = () => (
         <li>Returned, refused, or unclaimed packages.</li>
       </ul>
 
-      <h3 className="text-xl font-semibold text-primary mt-10 mb-3">Receiving & Acclimating Your Fish</h3>
+      <h3 className="text-xl font-bold text-primary mt-10 mb-3">Receiving & Acclimating Your Fish</h3>
       <p className="text-gray-700 mb-4">Follow these steps for a successful transition:</p>
 
       <p className="text-lg font-medium text-gray-800 mt-4">Temperature Acclimation</p>
@@ -67,7 +67,7 @@ const ShippingPolicy = () => (
         <li>Wait until the next day before feeding your new fish.</li>
       </ul>
 
-      <h3 className="text-xl font-semibold text-primary mt-10 mb-3">General Terms & Conditions</h3>
+      <h3 className="text-xl font-bold text-primary mt-10 mb-3">General Terms & Conditions</h3>
 
       <p className="text-gray-700 font-medium mb-2">Fish Health & Coloration</p>
       <ul className="list-disc list-inside space-y-3 text-gray-700">
@@ -94,7 +94,7 @@ const ShippingPolicy = () => (
         Still have questions? Contact the{' '}
         <a
           href="mailto:iaquaaquatics@gmail.com "
-          className="text-primary font-semibold hover:underline"
+          className="text-primary font-bold hover:underline"
         >
           iAqua Aquatics
         </a>{' '}

@@ -36,7 +36,7 @@ const HowToOrder = () => (
           <div key={step} className="flex flex-col items-center">
             <div className="text-3xl font-bold text-primary w-10 text-center mb-2">{step}</div>
             <div className="max-w-xl">
-              <h3 className="text-xl font-semibold mb-1">{title}</h3>
+              <h3 className="text-xl font-bold mb-1">{title}</h3>
               <p className="text-gray-700 text-base">{desc}</p>
             </div>
           </div>
@@ -44,6 +44,24 @@ const HowToOrder = () => (
       </div>
 
       <br />
+
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 mt-10 max-w-2xl mx-auto text-center shadow-sm">
+        <h3 className="text-2xl font-extrabold text-primary mb-3">iAqua Aquatics Preorder List</h3>
+
+        <br />
+
+        <p className="text-gray-700 text-base leading-relaxed">
+          Simply pick the fish you need — with fixed price and quantity — by any 
+          <span className="font-bold text-primary"> Tuesday afternoon</span>, and you’ll receive them the following 
+          <span className="font-bold text-primary"> Tuesday</span>.
+          <span className="block mt-1">
+            Local pickups are available on <span className="font-bold text-primary">Monday</span>.
+          </span>
+        </p>
+        <p className="text-gray-700 text-base leading-relaxed mt-3">
+          We offer exceptional <span className="font-bold text-primary">SOUTHWEST shipping</span> within the Domestic USA. You can pack a large number of transship items into one box for added value.
+        </p>
+      </div>
 
       <div className="text-center mt-14">
         <a

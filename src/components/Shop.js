@@ -54,74 +54,6 @@ const inventory = {
         ]
       }
     ],
-    Barbs: [
-
-    ],
-    Rasboras: [
-
-    ],
-    Betta: [
-      { id: 9, name: 'Butterfly Male Halfmoon Show (Large)', price: 11.99 }, 
-      { id: 10, name: 'Mustard Gas Halfmoon Male (Large)', price: 6.99 }, 
-      { id: 11, name: 'Rosepetal Male Halfmoon', price: 11.99 }, 
-      { id: 12, name: 'Koi Betta (Male)', price: 11.99 },
-      {
-        id: 5005,
-        name: 'Crowntail Betta (Male)',
-        price: 3.49,
-        pricingTiers: [
-          { min: 10, max: 24, price: 2.99 }
-        ]
-      },
-      {
-        id: 5006,
-        name: 'Halfmoon Fancy Betta (Male)',
-        price: 5.99,
-        pricingTiers: [
-          { min: 6, max: 20, price: 5.49 }
-        ]
-      },
-      {
-        id: 5007,
-        name: 'Dumbo Ear Halfmoon Betta (Male)',
-        price: 8.99,
-        pricingTiers: [
-          { min: 4, max: 15, price: 8.29 }
-        ]
-      },
-      {
-        id: 5008,
-        name: 'Koi Plakat Betta (Female)',
-        price: 4.99,
-        pricingTiers: [
-          { min: 6, max: 15, price: 4.49 }
-        ]
-      },
-      {
-        id: 5009,
-        name: 'Show Betta (Female)',
-        price: 1.99,
-        pricingTiers: [
-          { min: 10, max: 50, price: 1.79 }
-        ]
-      },
-      {
-        id: 5010,
-        name: 'Halfmoon Betta (Female) Large',
-        price: 3.99,
-        pricingTiers: [
-          { min: 6, max: 15, price: 3.49 }
-        ]
-      },
-      {
-        id: 5011,
-        name: 'Show Betta (Male)',
-        price: 2.29,
-        pricingTiers: [
-         { min: 30, price: 1.99 }
-        ]
-      }
-    ],
 
     Angels: [
       { id: 15, name: 'Angel (Assort) Medium', price: 2.99 }, 
@@ -203,12 +135,127 @@ const inventory = {
       },
 
     ],
-    Cichlids: [
 
+    Barbs: [
+      { id: 6000, name: 'Barb - Cherry', price: 1.29, pricingTiers: [{ min: 20, max: 50, price: 1.09 }] },
+      { id: 6001, name: 'Barb - Cherry Male Only', price: 1.89 },
+      { id: 6002, name: 'Barb - Tiger', price: 1.49, pricingTiers: [{ min: 15, max: 50, price: 1.29 }] }
     ],
+
+    Betta: [
+      { id: 9, name: 'Butterfly Male Halfmoon Show (Large)', price: 11.99 }, 
+      { id: 10, name: 'Mustard Gas Halfmoon Male (Large)', price: 6.99 }, 
+      { id: 11, name: 'Rosepetal Male Halfmoon', price: 11.99 }, 
+      { id: 12, name: 'Koi Betta (Male)', price: 11.99 },
+      {
+        id: 5005,
+        name: 'Crowntail Betta (Male)',
+        price: 3.49,
+        pricingTiers: [
+          { min: 10, max: 24, price: 2.99 }
+        ]
+      },
+      {
+        id: 5006,
+        name: 'Halfmoon Fancy Betta (Male)',
+        price: 5.99,
+        pricingTiers: [
+          { min: 6, max: 20, price: 5.49 }
+        ]
+      },
+      {
+        id: 5007,
+        name: 'Dumbo Ear Halfmoon Betta (Male)',
+        price: 8.99,
+        pricingTiers: [
+          { min: 4, max: 15, price: 8.29 }
+        ]
+      },
+      {
+        id: 5008,
+        name: 'Koi Plakat Betta (Female)',
+        price: 4.99,
+        pricingTiers: [
+          { min: 6, max: 15, price: 4.49 }
+        ]
+      },
+      {
+        id: 5009,
+        name: 'Show Betta (Female)',
+        price: 1.99,
+        pricingTiers: [
+          { min: 10, max: 50, price: 1.79 }
+        ]
+      },
+      {
+        id: 5010,
+        name: 'Halfmoon Betta (Female) Large',
+        price: 3.99,
+        pricingTiers: [
+          { min: 6, max: 15, price: 3.49 }
+        ]
+      },
+      {
+        id: 5011,
+        name: 'Show Betta (Male)',
+        price: 2.29,
+        pricingTiers: [
+         { min: 30, price: 1.99 }
+        ]
+      }
+    ],
+
+    Cichlids: [
+      { id: 8000, name: 'Assorted Color 1¼" African Cichlids', price: 1.69, pricingTiers: [{ min: 20, max: 50, price: 1.49 }] },
+      { id: 8001, name: 'Assorted Color 2" African Cichlids', price: 3.69, pricingTiers: [{ min: 12, max: 40, price: 3.29 }] },
+      { id: 8002, name: 'Assorted Color 4–5" African Cichlid Male', price: 14.99 },
+      { id: 8003, name: 'Assorted 2" Peacock Cichlids', price: 4.99, pricingTiers: [{ min: 8, max: 20, price: 4.49 }] },
+      { id: 8004, name: 'Assorted 3" Peacock Cichlids', price: 9.99 },
+      { id: 8005, name: 'Acei Violet Cichlid (M)', price: 4.99, pricingTiers: [{ min: 6, max: 20, price: 4.49 }] },
+      { id: 8006, name: 'Bumblebee Cichlid 2"', price: 4.99, pricingTiers: [{ min: 6, max: 20, price: 4.49 }] },
+      { id: 8007, name: 'Brichardi Fairy Cichlid', price: 6.99, pricingTiers: [{ min: 6, max: 15, price: 6.49 }] },
+      { id: 8008, name: 'Demasoni 2"', price: 7.99, pricingTiers: [{ min: 6, max: 15, price: 7.49 }] },
+      { id: 8009, name: 'Frontosa (M)', price: 14.99, pricingTiers: [{ min: 4, max: 10, price: 13.99 }] },
+      { id: 8010, name: 'Frontosa Blue Zaire 2"', price: 24.99 },
+      { id: 8011, name: 'Peacock Cichlid - Red Dragon (M)', price: 5.99, pricingTiers: [{ min: 6, max: 15, price: 5.49 }] },
+      { id: 8012, name: 'Red Empress Cichlid (L) 3"', price: 9.99, pricingTiers: [{ min: 5, max: 15, price: 8.99 }] },
+      { id: 8013, name: 'Star Sapphire Cichlid (M)', price: 16.99, pricingTiers: [{ min: 4, max: 15, price: 15.99 }] },
+      { id: 8100, name: 'Apisto. Agassizi Double Red Male', price: 9.99 },
+      { id: 8101, name: 'Apisto. Borellii', price: 4.99 },
+      { id: 8102, name: 'Apisto. Cacatuoides', price: 5.99, pricingTiers: [{ min: 8, max: 30, price: 5.49 }] },
+      { id: 8103, name: 'Acara - Electric Blue', price: 5.99, pricingTiers: [{ min: 6, max: 15, price: 5.49 }] },
+      { id: 8104, name: 'Convict Cichlid (M)', price: 2.89, pricingTiers: [{ min: 8, max: 20, price: 2.69 }] },
+      { id: 8105, name: 'Flowerhorn - Blue Dragon 2"', price: 7.99 },
+      { id: 8106, name: 'Electric Blue Jack Dempsey (M)', price: 12.99 },
+      { id: 8107, name: 'Jack Dempsey (M)', price: 3.99, pricingTiers: [{ min: 8, max: 20, price: 3.69 }] },
+      { id: 8108, name: 'Oscar - Red (M)', price: 6.99, pricingTiers: [{ min: 6, max: 15, price: 6.49 }] },
+      { id: 8109, name: 'Parrot Cichlid - Blood Red 3"', price: 12.99 },
+      { id: 8110, name: 'Texas Cichlid', price: 2.89 }
+    ],
+
+    Danios: [
+      { id: 6003, name: 'Danio - Celestial Pearl (Galaxy)', price: 3.19, pricingTiers: [{ min: 20, max: 50, price: 2.99 }] },
+      { id: 6004, name: 'Danio - Giant (L)', price: 1.89, pricingTiers: [{ min: 10, max: 30, price: 1.69 }] },
+      { id: 6005, name: 'Danio - Glowlight (M)', price: 2.89, pricingTiers: [{ min: 15, max: 50, price: 2.69 }] },
+      { id: 6006, name: 'Danio - Zebra (M)', price: 0.99, pricingTiers: [{ min: 30, max: 100, price: 0.89 }] },
+      { id: 6007, name: 'Danio - Zebra Long Fin (M)', price: 1.09, pricingTiers: [{ min: 30, max: 100, price: 0.99 }] }
+    ],
+
     Discus: [
       { id: 20, name: 'Discus (Blue Turquoise) 3"', price: 34.99 },
       { id: 21, name: 'Discus (Red Turquoise) 3"', price: 34.99 }
+    ],
+
+    Rasboras: [
+      { id: 7000, name: 'Rasbora - Brilliant Red Tail', price: 1.49, pricingTiers: [{ min: 25, max: 100, price: 1.29 }] },
+      { id: 7001, name: 'Rasbora - Chili', price: 1.89, pricingTiers: [{ min: 25, max: 60, price: 1.69 }] },
+      { id: 7002, name: 'Rasbora - Dwarf Clown Spot', price: 0.99, pricingTiers: [{ min: 20, max: 50, price: 0.89 }] },
+      { id: 7003, name: 'Rasbora - Espei', price: 1.49, pricingTiers: [{ min: 15, max: 40, price: 1.29 }] },
+      { id: 7004, name: 'Rasbora - Green Kubotai', price: 2.99, pricingTiers: [{ min: 12, max: 50, price: 2.79 }] },
+      { id: 7005, name: 'Rasbora - Harlequin (M)', price: 1.49, pricingTiers: [{ min: 15, max: 40, price: 1.29 }] },
+      { id: 7006, name: 'Rasbora - Harlequin (L)', price: 1.69 },
+      { id: 7007, name: 'Rasbora - Micro Tiger', price: 2.99, pricingTiers: [{ min: 12, max: 50, price: 2.79 }] },
+      { id: 7008, name: 'Rasbora - Rummynose Male', price: 2.99, pricingTiers: [{ min: 12, max: 50, price: 2.79 }] }
     ],
       
     Tetra: [
@@ -359,7 +406,7 @@ const inventory = {
         ]
       },
       {
-        id: 5029,
+        id: 5030,
         name: 'Tetra (Serpae) Red Minor',
         price: 1.09,
         pricingTiers: [
@@ -367,7 +414,7 @@ const inventory = {
         ]
       },
       {
-        id: 5030,
+        id: 5031,
         name: 'Tetra (Silvertip)',
         price: 1.09,
         pricingTiers: [
@@ -375,6 +422,11 @@ const inventory = {
         ]
       }
     ],
+
+    WhiteClouds: [
+    { id: 7009, name: 'White Cloud (L)', price: 0.99, pricingTiers: [{ min: 25, max: 50, price: 0.89 }] },
+    { id: 7010, name: 'White Cloud Gold (M)', price: 0.99, pricingTiers: [{ min: 25, max: 50, price: 0.89 }] }
+  ]
   },
   plants: {
     'Sword Plants': [
@@ -476,14 +528,18 @@ const ItemCard = ({ item, addToCart }) => {
 
       {item.pricingTiers && (
         <div className="text-sm text-gray-500">
-          {item.pricingTiers.map((tier, idx) => (
-            <p key={idx}>
-              {tier.min}–{tier.max || '∞'}: ${tier.price.toFixed(2)}
-            </p>
-          ))}
-          <p>
-            Other: ${item.price.toFixed(2)}
-          </p>
+          <span className="inline-block bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full mb-2">
+            Bulk Pricing Available
+          </span>
+
+          <div className="space-y-1">
+            {item.pricingTiers.map((tier, idx) => (
+              <p key={idx}>
+                {tier.min}–{tier.max || '∞'}: ${tier.price.toFixed(2)}
+              </p>
+            ))}
+            <p>Other: ${item.price.toFixed(2)}</p>
+          </div>
 
           <br />
         </div>
@@ -594,7 +650,7 @@ const Shop = () => {
         <div className="mb-10 text-center">
           <input
             type="text"
-            placeholder="Start by selecting a category, then search for specific items"
+            placeholder="Start by selecting a category, then search for items"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full max-w-md px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500"

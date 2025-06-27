@@ -35,7 +35,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative">
         <div className="md:hidden flex justify-between items-center w-full">
           <button
-            className="text-3xl focus:outline-none"
+            className="text-4xl focus:outline-none"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
