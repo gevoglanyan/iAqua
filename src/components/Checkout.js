@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js';
 import { useCart } from './CartContext';
-import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Checkout = () => {
   const { cart, dispatch } = useCart();
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
+
+  const CHECKOUT_DISABLED = true;
 
   const total = parseFloat(
     cart.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2)
@@ -72,7 +73,7 @@ const Checkout = () => {
             </div>
 
             <br /> <br /> <br />
-        
+
             <h3 className="text-2xl font-semibold text-black mb-4 text-center">
               Please view our{' '}
               <Link to="/shipping-policy" className="text-purple-600 hover:text-purple-700 font-medium">
@@ -88,74 +89,80 @@ const Checkout = () => {
             <br />
 
             <div className="mt-12 relative z-0">
-              {!checkoutEnabled && (
+              {CHECKOUT_DISABLED ? (
                 <div className="text-center text-purple-500 font-medium mb-4">
-                  A minimum purchase of $175 is required to proceed to checkout.
-                  <br /> <br />
+                  Checkout is currently unavailable. Please check back later.
                 </div>
-              )}
+              ) : (
+                <PayPalScriptProvider options={paypalOptions}>
+                  {!checkoutEnabled && (
+                    <div className="text-center text-purple-500 font-medium mb-4">
+                      A minimum purchase of $175 is required to proceed to checkout.
+                      <br /> <br />
+                    </div>
+                  )}
 
-              <PayPalScriptProvider options={paypalOptions}>
-                {loading && (
-                  <div className="text-center text-gray-600 mb-4">
-                    Processing your payment.
-                    <br /> <br/>
-                  </div>
-                )}
+                  {loading && (
+                    <div className="text-center text-gray-600 mb-4">
+                      Processing your payment.
+                      <br /> <br />
+                    </div>
+                  )}
 
-                <PayPalButtons
-                  style={{ layout: 'vertical' }}
-                  forceReRender={[total, checkoutEnabled]}
-                  disabled={!checkoutEnabled}
-                  createOrder={(data, actions) => {
-                    if (!checkoutEnabled) {
-                      alert('A minimum purchase of $175 is required to checkout.');
-                      return Promise.reject();
-                    }
+                  <PayPalButtons
+                    style={{ layout: 'vertical' }}
+                    forceReRender={[total, checkoutEnabled]}
+                    disabled={!checkoutEnabled}
+                    createOrder={(data, actions) => {
+                      if (!checkoutEnabled) {
+                        alert('A minimum purchase of $175 is required to checkout.');
+                        return Promise.reject();
+                      }
 
-                    setLoading(true);
+                      setLoading(true);
 
-                    return actions.order.create({
-                      purchase_units: [
-                        {
-                          amount: { value: total.toFixed(2) },
-                          shipping: {
-                            options: [
-                              {
-                                id: 'STANDARD_SHIPPING',
-                                label: 'Standard Shipping',
-                                type: 'SHIPPING',
-                                selected: true,
-                                amount: { value: '0.00', currency_code: 'USD' },
-                              },
-                            ],
+                      return actions.order.create({
+                        purchase_units: [
+                          {
+                            amount: { value: total.toFixed(2) },
+                            shipping: {
+                              options: [
+                                {
+                                  id: 'STANDARD_SHIPPING',
+                                  label: 'Standard Shipping',
+                                  type: 'SHIPPING',
+                                  selected: true,
+                                  amount: { value: '0.00', currency_code: 'USD' },
+                                },
+                              ],
+                            },
                           },
+                        ],
+                        application_context: {
+                          shipping_preference: 'GET_FROM_FILE',
                         },
-                      ],
-                      application_context: {
-                        shipping_preference: 'GET_FROM_FILE',
-                      },
-                    });
-                  }}
-                  onApprove={(data, actions) => {
-                    if (!checkoutEnabled) return Promise.resolve();
-
-                    return actions.order.capture().then((details) => {
-                      dispatch({ type: 'CLEAR_CART' });
-                      setLoading(false);
-                      navigate('/success', {
-                        state: { payerName: details.payer.name.given_name },
                       });
-                    });
-                  }}
-                  onCancel={() => setLoading(false)}
-                  onError={(err) => {
-                    console.error('PayPal error:', err);
-                    setLoading(false);
-                    alert('There was an issue processing your payment.');
-                  }}
-                />
-              </PayPalScriptProvider>
+                    }}
+                    onApprove={(data, actions) => {
+                      if (!checkoutEnabled) return Promise.resolve();
+
+                      return actions.order.capture().then((details) => {
+                        dispatch({ type: 'CLEAR_CART' });
+                        setLoading(false);
+                        navigate('/success', {
+                          state: { payerName: details.payer.name.given_name },
+                        });
+                      });
+                    }}
+                    onCancel={() => setLoading(false)}
+                    onError={(err) => {
+                      console.error('PayPal error:', err);
+                      setLoading(false);
+                      alert('There was an issue processing your payment.');
+                    }}
+                  />
+                </PayPalScriptProvider>
+              )}
             </div>
           </>
         )}
