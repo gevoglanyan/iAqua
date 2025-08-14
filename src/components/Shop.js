@@ -423,34 +423,34 @@ const inventory = {
 
   plants: {
     'Anubias': [
-      { id: 1100, name: 'Anubias Barteri (M)', price: 11.99 },
-      { id: 1101, name: 'Anubias Frazeri (M)', price: 11.99 },
-      { id: 1102, name: 'Anubias Nana (M)', price: 11.99 }
+      { id: 1100, name: 'Anubias Barteri (M)', price: 7.89 },
+      { id: 1101, name: 'Anubias Frazeri (M)', price: 7.89 },
+      { id: 1102, name: 'Anubias Nana (M)', price: 7.89 }
     ],
 
     'Bunched Stems': [
-      { id: 1400, name: 'Ammania Gracilis (Bunched & Leaded)', price: 6.99 },
-      { id: 1401, name: 'Anacharis (Bunched & Leaded)', price: 7.19 },
-      { id: 1410, name: 'Bacopa (Bunched & Leaded)', price: 6.99 },
-      { id: 1411, name: 'Giant Baby Tears (Bunched & Leaded)', price: 6.99 },
-      { id: 1412, name: 'Glossostigma (Bunched & Leaded)', price: 6.99 },
-      { id: 1413, name: 'Hornwort (Bunched & Leaded)', price: 6.99 },
-      { id: 1414, name: 'Hygro Pinna (Bunched & Leaded)', price: 7.29 },
-      { id: 1415, name: 'Ludwigia Deep Red (Bunched & Leaded)', price: 6.99 },
-      { id: 1416, name: 'Ludwigia Green (Bunched & Leaded)', price: 6.99 },
-      { id: 1417, name: 'Mermaid (Bunched & Leaded)', price: 6.99 },
-      { id: 1418, name: 'Mint Charlie (Bunched & Leaded)', price: 6.99 },
+      { id: 1400, name: 'Ammania Gracilis (Bunched & Leaded)', price: 2.99 },
+      { id: 1401, name: 'Anacharis (Bunched & Leaded)', price: 2.99 },
+      { id: 1410, name: 'Bacopa (Bunched & Leaded)', price: 2.49 },
+      { id: 1411, name: 'Giant Baby Tears (Bunched & Leaded)', price: 3.99 },
+      { id: 1412, name: 'Glossostigma (Bunched & Leaded)', price: 2.49 },
+      { id: 1413, name: 'Hornwort (Bunched & Leaded)', price: 2.49 },
+      { id: 1414, name: 'Hygro Pinna (Bunched & Leaded)', price: 3.59 },
+      { id: 1415, name: 'Ludwigia Deep Red (Bunched & Leaded)', price: 3.98 },
+      { id: 1416, name: 'Ludwigia Green (Bunched & Leaded)', price: 2.49 },
+      { id: 1417, name: 'Mermaid (Bunched & Leaded)', price: 2.49 },
+      { id: 1418, name: 'Mint Charlie (Bunched & Leaded)', price: 2.49 },
       { id: 1419, name: 'Misc. Bunched Plants (Assorted)', price: 6.99, pricingTiers: [{ min: 10, max: 40, price: 6.79 }] },
-      { id: 1420, name: 'Parrots Feather (Bunched & Leaded)', price: 6.99 },
-      { id: 1421, name: 'Pennywort (Bunched & Leaded)', price: 6.99 }
+      { id: 1420, name: 'Parrots Feather (Bunched & Leaded)', price: 2.59 },
+      { id: 1421, name: 'Pennywort (Bunched & Leaded)', price: 2.69 }
     ],
 
     'Bulbs': [
-      { id: 1600, name: 'Cardinal Plant (Bare Root Each)', price: 6.49 },
+      { id: 1600, name: 'Cardinal Plant (Bare Root Each)', price: 2.59 }
     ],
 
     'Carpets & Grasses': [
-      { id: 1800, name: '“Valish” Sagittaria – Dwarf (Bunched & Leaded)', price: 6.89 }
+      { id: 1800, name: '“Valish” Sagittaria – Dwarf (Bunched & Leaded)', price: 2.79 }
     ],
 
     'Cryptocoryne': [
@@ -460,7 +460,7 @@ const inventory = {
     ],
 
     'Ferns': [
-      { id: 1300, name: 'Java Fern (M)', price: 8.69 },
+      { id: 1300, name: 'Java Fern (M)', price: 3.79 }
     ],
 
     'Floating': [
@@ -468,33 +468,33 @@ const inventory = {
     ],
 
     'Mosses': [
-      { id: 1301, name: 'Java Moss (Full Betta Cup Portion)', price: 8.99 },
-      { id: 1302, name: 'Christmas Moss (Full Betta Cup Portion)', price: 8.99 }
+      { id: 1301, name: 'Java Moss (Full Betta Cup Portion)', price: 3.98 },
+      { id: 1302, name: 'Christmas Moss (Full Betta Cup Portion)', price: 4.87 }
     ],
 
     'Onions': [
-        { id: 1601, name: 'Onion Plant (Bare Root Each)', price: 6.49 }
+      { id: 1601, name: 'Onion Plant (Bare Root Each)', price: 2.49 }
     ],
 
     'Potted': [
-      { id: 1150, name: 'Potted - Anubias Barteri', price: 10.99 },
-      { id: 1151, name: 'Potted - Anubias Nana', price: 10.99 },
+      { id: 1150, name: 'Potted - Anubias Barteri', price: 7.89 },
+      { id: 1151, name: 'Potted - Anubias Nana', price: 7.89 },
       { id: 1152, name: 'Potted - Crypto Wendtii', price: 8.89 },
       { id: 1153, name: 'Potted - Dwarf Baby Tears', price: 8.89 },
       { id: 1154, name: 'Potted - Dwarf Hairgrass', price: 8.89 },
       { id: 1155, name: 'Potted - Giant Hairgrass', price: 8.89 },
       { id: 1156, name: 'Potted - Micro Sword', price: 8.89 },
-      { id: 1157, name: 'Potted - Monte Carlo', price: 8.89 },
+      { id: 1157, name: 'Potted - Monte Carlo', price: 4.59 },
       { id: 1158, name: 'Potted - Pearl Weed', price: 8.89 },
-      { id: 1159, name: 'Potted - Pogostemon Narrow Leaf', price: 8.89 },
+      { id: 1159, name: 'Potted - Pogostemon Narrow Leaf', price: 2.89 },
       { id: 1160, name: 'Potted - Red Mini Ludwigia', price: 8.89 },
       { id: 1161, name: 'Potted - Red Rotala', price: 8.89 },
-      { id: 1162, name: 'Potted - Scarlet Temple', price: 8.89 },
+      { id: 1162, name: 'Potted - Scarlet Temple', price: 3.98 },
       { id: 1163, name: 'Potted - Sword Radican', price: 9.99 },
-      { id: 1164, name: 'Potted - Temple', price: 8.89 },
-      { id: 1165, name: 'Potted - Venus Fly Trap', price: 12.99 },
-      { id: 1166, name: 'Potted - Wisteria', price: 8.89 },
-      { id: 1167, name: 'Potted - Assorted Aquarium Plants', price: 8.79, pricingTiers: [{ min: 12, max: 40, price: 8.49 }] }
+      { id: 1164, name: 'Potted - Temple', price: 3.98 },
+      { id: 1165, name: 'Potted - Venus Fly Trap', price: 11.95 },
+      { id: 1166, name: 'Potted - Wisteria', price: 3.98 },
+      { id: 1167, name: 'Potted - Assorted Aquarium Plants', price: 8.79 }
     ],
 
     'Swords': [
@@ -506,13 +506,13 @@ const inventory = {
 
     'Terrarium': [
       { id: 1700, name: 'Bamboo - Straight 12"', price: 6.99 },
-      { id: 1701, name: 'Terrarium Aluminum Plant (Bunched & Leaded)', price: 7.29 },
-      { id: 1702, name: 'Terrarium Purple Waffle (Bunched & Leaded)', price: 7.29 }
+      { id: 1701, name: 'Terrarium Aluminum Plant (Bunched & Leaded)', price: 2.49 },
+      { id: 1702, name: 'Terrarium Purple Waffle (Bunched & Leaded)', price: 3.99 }
     ],
 
     'Vallisneria': [
-      { id: 1950, name: 'Val - Contortion (Bunched & Leaded)', price: 8.49 },
-      { id: 1951, name: 'Val - Jungle (Bunched & Leaded)', price: 7.99 }
+      { id: 1950, name: 'Val - Contortion (Bunched & Leaded)', price: 3.99 },
+      { id: 1951, name: 'Val - Jungle (Bunched & Leaded)', price: 3.99 }
     ]
   },
 
