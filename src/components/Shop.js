@@ -421,7 +421,6 @@ const inventory = {
     ]
   },
 
-
   plants: {
     'Anubias': [
       { id: 1100, name: 'Anubias Barteri (M)', price: 11.99 },
@@ -521,9 +520,11 @@ const inventory = {
     'Fish Items': [
       { id: 200, name: 'Breeder Net', price: 3.49 }
     ],
+
     'Plant Items': [
       { id: 300, name: 'Plant Fertilizer', price: 7.99 }
     ],
+
     'Fish Food': [
       { id: 400, name: 'Premium Community Flake Food (0.8 oz)', price: 2.60 },
       { id: 401, name: 'Premium Community Flake Food (2.1 oz)', price: 4.89 },
@@ -547,16 +548,18 @@ const inventory = {
       { id: 419, name: "Marine Fish Treat Tabs 'Stick on Glass' (2.1 oz)", price: 8.61 },
       { id: 420, name: 'Discus Granules with Probiotics (3.9 oz)', price: 8.68 }
     ],
+
     Carbon: [
-      { id: 400, name: 'iAqua Carbon (8 oz)', price: 6.99 }, 
-      { id: 401, name: 'iAqua Carbon (12 oz)', price: 8.99 }, 
+      { id: 400, name: 'iAqua Carbon (8 oz)', price: 8.99 }, 
+      { id: 401, name: 'iAqua Carbon (12 oz)', price: 10.99 }, 
       { id: 402, name: 'iAqua Carbon (16 oz)', price: 12.99 }, 
       { id: 403, name: 'iAqua Carbon (24 oz)', price: 18.99 }
     ],
+
     Driftwood: [
-      { id: 500, name: 'Small Decorative Driftwood', price: 11.99 }, 
+      { id: 500, name: 'Small Decorative Driftwood', price: 12.99 }, 
       { id: 501, name: 'Medium Decorative Driftwood', price: 16.99 }, 
-      { id: 502, name: 'Large Decorative Driftwood', price: 21.99 },
+      { id: 502, name: 'Large Decorative Driftwood', price: 20.99 },
     ],
   },
 };
