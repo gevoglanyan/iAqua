@@ -517,12 +517,17 @@ const inventory = {
   },
 
   misc: {
-    'Fish Items': [
-      { id: 200, name: 'Breeder Net', price: 3.49 }
+    Carbon: [
+      { id: 400, name: 'iAqua Carbon (8 oz)', price: 8.99 }, 
+      { id: 401, name: 'iAqua Carbon (12 oz)', price: 10.99 }, 
+      { id: 402, name: 'iAqua Carbon (16 oz)', price: 12.99 }, 
+      { id: 403, name: 'iAqua Carbon (24 oz)', price: 18.99 }
     ],
 
-    'Plant Items': [
-      { id: 300, name: 'Plant Fertilizer', price: 7.99 }
+    Driftwood: [
+      { id: 500, name: 'Small Decorative Driftwood', price: 12.99 }, 
+      { id: 501, name: 'Medium Decorative Driftwood', price: 16.99 }, 
+      { id: 502, name: 'Large Decorative Driftwood', price: 20.99 },
     ],
 
     'Fish Food': [
@@ -549,17 +554,12 @@ const inventory = {
       { id: 420, name: 'Discus Granules with Probiotics (3.9 oz)', price: 8.68 }
     ],
 
-    Carbon: [
-      { id: 400, name: 'iAqua Carbon (8 oz)', price: 8.99 }, 
-      { id: 401, name: 'iAqua Carbon (12 oz)', price: 10.99 }, 
-      { id: 402, name: 'iAqua Carbon (16 oz)', price: 12.99 }, 
-      { id: 403, name: 'iAqua Carbon (24 oz)', price: 18.99 }
+    'Fish Items': [
+      { id: 200, name: 'Breeder Net', price: 3.49 }
     ],
 
-    Driftwood: [
-      { id: 500, name: 'Small Decorative Driftwood', price: 12.99 }, 
-      { id: 501, name: 'Medium Decorative Driftwood', price: 16.99 }, 
-      { id: 502, name: 'Large Decorative Driftwood', price: 20.99 },
+    'Plant Items': [
+      { id: 300, name: 'Plant Fertilizer', price: 7.99 }
     ],
   },
 };
