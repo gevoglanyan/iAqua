@@ -8,7 +8,7 @@ const Checkout = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
-  const CHECKOUT_DISABLED = true;
+  const CHECKOUT_DISABLED = false;
 
   const total = parseFloat(
     cart.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2)
