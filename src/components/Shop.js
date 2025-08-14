@@ -460,14 +460,17 @@ const inventory = {
       { id: 1902, name: 'Crypto Wendtii Red (Bare Root, Large)', price: 7.49 }
     ],
 
-    'Ferns & Mosses': [
+    'Ferns': [
       { id: 1300, name: 'Java Fern (M)', price: 8.69 },
-      { id: 1301, name: 'Java Moss (Full Betta Cup Portion)', price: 8.99 },
-      { id: 1302, name: 'Christmas Moss (Full Betta Cup Portion)', price: 8.99 }
     ],
 
     'Floating': [
       { id: 1500, name: 'Salvinia (Full Betta Cup Portion)', price: 6.99 }
+    ],
+
+    'Mosses': [
+      { id: 1301, name: 'Java Moss (Full Betta Cup Portion)', price: 8.99 },
+      { id: 1302, name: 'Christmas Moss (Full Betta Cup Portion)', price: 8.99 }
     ],
 
     'Onions': [
