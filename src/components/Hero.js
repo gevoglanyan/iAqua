@@ -57,6 +57,21 @@ const Hero = () => {
 
       <br />
 
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
+        <img
+          src="images/iAqua African Cichlids.png"
+          alt="iAqua Aquatics"
+          className="max-w-xl w-full drop-shadow mb-6 lg:mb-0"
+        />
+        <img
+          src="images/iAqua South American Cichlids.png"
+          alt="iAqua Aquatics"
+          className="max-w-xl w-full drop-shadow mb-6 lg:mb-0"
+        />
+      </div>
+
+      <br /> <br /> <br />
+
       <h2 className="text-4xl font-bold text-primary text-center mb-10">Contact Us</h2>
       <p className="text-gray-600 text-center text-base mb-14">
         Have a question about an order, a product, or a bulk request? 
