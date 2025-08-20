@@ -594,6 +594,7 @@ const ItemCard = ({ item, addToCart }) => {
   return (
     <div className="bg-white shadow-md rounded-lg p-6 text-center border border-gray-100 hover:shadow-xl transition w-full max-w-sm">
       <h4 className="text-xl font-bold text-gray-800 mb-2">{item.name}</h4>
+      <p className="text-lg text-gray-600 mb-2">Stock #{item.id}</p>
       <p className="text-gray-600 font-medium mb-4 text-lg">
         ${getTieredPrice(item, parseInt(quantity) || 1).toFixed(2)}
       </p>
@@ -666,9 +667,13 @@ const Shop = () => {
     return (
       <div className="space-y-12">
         {selectedCategories.map((categoryName) => {
-          const items = categoryData[categoryName].filter(item =>
-            item.name.toLowerCase().includes(searchQuery.toLowerCase())
-          );
+          const items = categoryData[categoryName].filter(item => {
+            const query = searchQuery.toLowerCase();
+            return (
+              item.name.toLowerCase().includes(query) ||
+              item.id.toString().includes(query) // search by stock number
+            );
+          });
 
           if (items.length === 0) return null;
 
