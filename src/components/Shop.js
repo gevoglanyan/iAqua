@@ -5,40 +5,38 @@ import { Link } from 'react-router-dom';
 const inventory = {
   fish: {
     African: [
-      { id: 1, name: 'African Butterfly Fish', price: 16.99 },
-      { id: 5202, name: 'African Dwarf Frog (Male)', price: 6.89, pricingTiers: [{ min: 12, max: 50, price: 6.69 }] },
-      { id: 2, name: 'Bichir (Armored) 3"', price: 16.99 },
-      { id: 3, name: 'Bichir (Semegalus) 4"', price: 12.99 },
-      { id: 4, name: 'Bichir (Ornate)', price: 34.99 },
-      { id: 5201, name: 'Blond Dwarf Frog (Male)', price: 6.99, pricingTiers: [{ min: 15, max: 50, price: 6.79 }] },
-      { id: 5, name: 'Elephant Nose', price: 24.99 },
-      { id: 5203, name: 'Leaf Fish (Leopard)', price: 10.99, pricingTiers: [{ min: 4, max: 10, price: 10.49 }] },
-      { id: 5204, name: 'Puffer (Fahaka)', price: 16.99, pricingTiers: [{ min: 4, max: 10, price: 15.99 }] },
-      { id: 6, name: 'Rope Fish', price: 19.99 },
-      { id: 7, name: 'Shrimp (Vampire)', price: 16.99 },
-      { id: 5205, name: 'Syn Catfish - Syndontis Petricola', price: 13.99 },
-      { id: 5207, name: 'Syn Catfish - Eupterus', price: 8.49 },
-      { id: 5208, name: 'Syn Catfish - Valentines', price: 9.99 },
-      { id: 5206, name: 'Syn Catfish - Upside Down', price: 9.89, pricingTiers: [{ min: 10, max: 30, price: 9.49 }] },
-      { id: 5200, name: 'Tetra (Congo) Medium', price: 7.99, pricingTiers: [{ min: 10, max: 30, price: 7.79 }] },
-      { id: 8, name: 'Tetra (Congo) XL', price: 11.99 }
+      { id: 6, name: 'African Butterfly Fish', price: 16.99 },
+      { id: 7, name: 'Blond Dwarf Frog (Male)', price: 6.99, pricingTiers: [{ min: 15, max: 50, price: 6.79 }] },
+      { id: 8, name: 'African Dwarf Frog (M/L)', price: 6.89, pricingTiers: [{ min: 12, max: 50, price: 6.69 }] },
+      { id: 9, name: 'Bichir (Armored) 3"', price: 16.99 },
+      { id: 10, name: 'Bichir (Senegalus) 4"', price: 12.99 },
+      { id: 11, name: 'Bichir (Ornate)', price: 34.99 },
+      { id: 12, name: 'Elephant Nose', price: 24.99 },
+      { id: 13, name: 'Leaf Fish (Leopard)', price: 10.99, pricingTiers: [{ min: 4, max: 10, price: 10.49 }] },
+      { id: 14, name: 'Puffer (Fahaka) Small', price: 16.99, pricingTiers: [{ min: 4, max: 10, price: 15.99 }] },
+      { id: 15, name: 'Rope Fish', price: 19.99 },
+      { id: 16, name: 'Shrimp (Vampire)', price: 16.99 },
+      { id: 17, name: 'Syn Catfish - Synodontis Petricola', price: 13.99 },
+      { id: 18, name: 'Syn Catfish - Upside Down', price: 9.89, pricingTiers: [{ min: 8, max: 30, price: 9.49 }] },
+      { id: 19, name: 'Syn Catfish - Eupterus', price: 8.49, pricingTiers: [{ min: 10, max: 30, price: 8.19 }] },
+      { id: 20, name: 'Syn Catfish - Valentines', price: 9.99 },
+      { id: 21, name: 'Tetra (Congo) Medium', price: 7.99, pricingTiers: [{ min: 10, max: 30, price: 7.79 }] },
+      { id: 22, name: 'Tetra (Congo) XL', price: 11.99 }
     ],
 
     Angels: [
-      { id: 17, name: 'Angel (Black Veil)', price: 12.99 },
-      { id: 16, name: 'Angel (Assort Veil) XL', price: 13.99 },
-      { id: 15, name: 'Angel (Assort) Medium', price: 7.99 },
-      { id: 18, name: 'Angel (Blue Pinoy) Large', price: 17.99 },
-      { id: 5300, name: 'Angel (Full Black) Medium', price: 10.99, pricingTiers: [{ min: 6, max: 15, price: 10.49 }] },
-      { id: 19, name: 'Angel (Manacapuru)', price: 19.99 },
-      { id: 5305, name: 'Angel (Half Black Veil) Medium', price: 10.99, pricingTiers: [{ min: 6, max: 15, price: 10.49 }] },
-      { id: 5306, name: 'Angel (Koi) Medium', price: 10.99, pricingTiers: [{ min: 6, max: 15, price: 10.49 }] },
-      { id: 5307, name: 'Angel (Leopard) Large', price: 10.99, pricingTiers: [{ min: 6, max: 15, price: 10.49 }] },
-      { id: 5303, name: 'Angel (Gold Marble) Medium', price: 10.99, pricingTiers: [{ min: 6, max: 15, price: 10.49 }] },
-      { id: 5301, name: 'Angel (Blue Zebra) Medium', price: 13.99, pricingTiers: [{ min: 5, max: 15, price: 13.29 }] },
-      { id: 5304, name: 'Angel (Marble) Medium', price: 9.99, pricingTiers: [{ min: 6, max: 15, price: 9.49 }] },
-      { id: 5308, name: 'Angel (Platinum) Large', price: 10.99, pricingTiers: [{ min: 6, max: 15, price: 10.49 }] },
-      { id: 5310, name: 'Angel (Wild Silver) Large', price: 12.99, pricingTiers: [{ min: 6, max: 12, price: 12.29 }] }
+      { id: 23, name: 'Angel (Assort) Medium', price: 7.99 },
+      { id: 24, name: 'Angel (Assort Veil) XL', price: 13.99 },
+      { id: 25, name: 'Angel (Full Black) Medium', price: 10.99, pricingTiers: [{ min: 6, max: 15, price: 10.49 }] },
+      { id: 26, name: 'Angel (Black Veil) M/L', price: 12.99 },
+      { id: 27, name: 'Angel (Blue Pinoy) Large', price: 17.99 },
+      { id: 28, name: 'Angel (Blue Zebra) Medium', price: 13.99, pricingTiers: [{ min: 5, max: 15, price: 13.29 }] },
+      { id: 29, name: 'Angel (Gold Marble) Medium', price: 10.99, pricingTiers: [{ min: 6, max: 15, price: 10.49 }] },
+      { id: 30, name: 'Angel (Marble) Medium', price: 9.99, pricingTiers: [{ min: 6, max: 15, price: 9.49 }] },
+      { id: 31, name: 'Angel (Half Black Veil) Medium', price: 10.99, pricingTiers: [{ min: 6, max: 15, price: 10.49 }] },
+      { id: 32, name: 'Angel (Koi) Medium', price: 10.99, pricingTiers: [{ min: 6, max: 15, price: 10.49 }] },
+      { id: 33, name: 'Angel (Leopard) Large', price: 10.99, pricingTiers: [{ min: 6, max: 15, price: 10.49 }] },
+      { id: 34, name: 'Angel (Platinum) Medium', price: 10.99, pricingTiers: [{ min: 6, max: 15, price: 10.49 }] }
     ],
 
     'Asian Imports': [
@@ -161,6 +159,12 @@ const inventory = {
       { id: 9519, name: 'Cory - Sterbai', price: 8.19, pricingTiers: [{ min: 10, max: 30, price: 7.99 }] },
     ],
 
+    Crab: [
+      { id: 15000, name: 'Crab - Micro Thai', price: 7.99, pricingTiers: [{ min: 10, max: 30, price: 7.69 }] },
+      { id: 15001, name: 'Crab - Pom Pom', price: 14.99, },
+      { id: 15002, name: 'Crab - Vampire', price: 10.99, pricingTiers: [{ min: 6, max: 20, price: 10.49 }] },
+    ],
+
     Danios: [
       { id: 6004, name: 'Danio - Giant (L)', price: 1.89, pricingTiers: [{ min: 10, max: 30, price: 1.69 }] },
       { id: 6005, name: 'Danio - Glowlight (M)', price: 2.89, pricingTiers: [{ min: 15, max: 50, price: 2.69 }] },
@@ -271,6 +275,13 @@ const inventory = {
       { id: 9406, name: 'Rice Fish - Luminescent White', price: 8.89, pricingTiers: [{ min: 10, max: 30, price: 8.49 }] }
     ],
 
+    Lobster: [
+      { id: 16000, name: 'Lobster - Cobalt Blue (M)', price: 15.99 },
+      { id: 16001, name: 'Lobster - Neon Red (M)', price: 15.99, pricingTiers: [{ min: 4, max: 10, price: 14.99 }] },
+      { id: 16002, name: 'Lobster - White Blizzard (M)', price: 15.99, pricingTiers: [{ min: 4, max: 10, price: 14.99 }] },
+      { id: 16003, name: 'Lobster - Neon Orange (M)', price: 15.99, pricingTiers: [{ min: 4, max: 10, price: 14.99 }] },
+    ],
+
     Mollies: [
       { id: 9911, name: 'Harlequin Sailfin Molly (L)', price: 8.49, pricingTiers: [{ min: 8, max: 40, price: 8.19 }] },
       { id: 9904, name: 'Black Lyretail Molly', price: 6.89, pricingTiers: [{ min: 8, max: 20, price: 6.69 }] },
@@ -359,6 +370,35 @@ const inventory = {
       { id: 9522, name: 'Shark - Rainbow', price: 7.69, pricingTiers: [{ min: 8, max: 30, price: 7.49 }] },
       { id: 9523, name: 'Shark - Red Tail', price: 7.69, pricingTiers: [{ min: 8, max: 30, price: 7.49 }] },
       { id: 9524, name: 'Shark - Roseline 3"', price: 13.99, pricingTiers: [{ min: 6, max: 20, price: 13.49 }] }
+    ],
+
+    Shrimp: [
+      { id: 17000, name: 'Shrimp - Amano', price: 6.89, pricingTiers: [{ min: 15, max: 50, price: 6.69 }] },
+      { id: 17001, name: 'Shrimp - Flower (Bamboo)', price: 10.89, pricingTiers: [{ min: 6, max: 15, price: 10.49 }] },
+      { id: 17002, name: 'Shrimp - Black Knight', price: 7.99, pricingTiers: [{ min: 10, max: 20, price: 7.79 }] },
+      { id: 17003, name: 'Shrimp - Bloody Mary', price: 8.29, pricingTiers: [{ min: 15, max: 40, price: 7.99 }] },
+      { id: 17004, name: 'Shrimp - Crystal Red Grade A (L)', price: 10.99, pricingTiers: [{ min: 6, max: 20, price: 10.49 }] },
+      { id: 17005, name: 'Shrimp - Cherry Red Grade A', price: 6.89, pricingTiers: [{ min: 20, max: 50, price: 6.69 }] },
+      { id: 17006, name: 'Shrimp - Green Jade', price: 8.29, pricingTiers: [{ min: 15, max: 40, price: 7.99 }] },
+      { id: 17007, name: 'Shrimp - Mandarine Orange', price: 7.99, pricingTiers: [{ min: 10, max: 20, price: 7.79 }] },
+      { id: 17008, name: 'Shrimp - Rili Red', price: 7.99, pricingTiers: [{ min: 10, max: 20, price: 7.79 }] },
+      { id: 17009, name: 'Shrimp - Orange Rili', price: 7.99, pricingTiers: [{ min: 10, max: 20, price: 7.79 }] },
+      { id: 17010, name: 'Shrimp - Pinocchio', price: 6.99, pricingTiers: [{ min: 15, max: 40, price: 6.69 }] },
+      { id: 17011, name: 'Shrimp - Super Blue', price: 7.99, pricingTiers: [{ min: 10, max: 20, price: 7.79 }] },
+      { id: 17012, name: 'Shrimp - Super Yellow', price: 7.99, pricingTiers: [{ min: 10, max: 20, price: 7.79 }] },
+      { id: 17013, name: 'Shrimp - Gold Black Yellow', price: 7.99, pricingTiers: [{ min: 10, max: 20, price: 7.79 }] },
+    ],
+
+    Snail: [
+      { id: 18000, name: 'Snail - Assassin', price: 6.09, pricingTiers: [{ min: 20, max: 50, price: 5.99 }] },
+      { id: 18001, name: 'Snail - Assorted Mystery', price: 6.89, pricingTiers: [{ min: 15, max: 50, price: 6.69 }] },
+      { id: 18002, name: 'Snail - Orange Rabbit', price: 7.99, pricingTiers: [{ min: 15, max: 50, price: 7.79 }] },
+      { id: 18003, name: 'Snail - Yellow Rabbit', price: 7.99, pricingTiers: [{ min: 15, max: 50, price: 7.79 }] },
+      { id: 18004, name: 'Snail - Japanese Trapdoor', price: 6.69, pricingTiers: [{ min: 15, max: 50, price: 6.49 }] },
+      { id: 18005, name: 'Snail - Pagoda', price: 7.99 },
+      { id: 18006, name: 'Snail - Thorny Tri-Color Zebra', price: 5.99, pricingTiers: [{ min: 20, max: 50, price: 5.99 }] },
+      { id: 18007, name: 'Snail - Tiger Nerite', price: 6.09, pricingTiers: [{ min: 20, max: 50, price: 5.99 }] },
+      { id: 18008, name: 'Snail - Zebra Nerite', price: 6.09, pricingTiers: [{ min: 20, max: 50, price: 5.99 }] },
     ],
 
     'South American': [
