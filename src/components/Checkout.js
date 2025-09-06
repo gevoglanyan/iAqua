@@ -8,7 +8,7 @@ const Checkout = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
-  const CHECKOUT_DISABLED = false;
+  const CHECKOUT_DISABLED = true;
 
   const total = parseFloat(
     cart.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2)
@@ -111,16 +111,15 @@ const Checkout = () => {
 
                   <PayPalButtons
                     style={{ layout: 'vertical' }}
-                    forceReRender={[total, checkoutEnabled]}
-                    disabled={!checkoutEnabled}
+                    forceReRender={[total, checkoutEnabled, CHECKOUT_DISABLED]}
+                    disabled={CHECKOUT_DISABLED || !checkoutEnabled}
                     createOrder={(data, actions) => {
-                      if (!checkoutEnabled) {
-                        alert('A minimum purchase of $175 is required to checkout.');
+                      if (CHECKOUT_DISABLED || !checkoutEnabled) {
+                        alert('Checkout is currently unavailable.');
                         return Promise.reject();
                       }
 
                       setLoading(true);
-
                       return actions.order.create({
                         purchase_units: [
                           {
@@ -144,7 +143,7 @@ const Checkout = () => {
                       });
                     }}
                     onApprove={(data, actions) => {
-                      if (!checkoutEnabled) return Promise.resolve();
+                      if (CHECKOUT_DISABLED || !checkoutEnabled) return Promise.resolve();
 
                       return actions.order.capture().then((details) => {
                         dispatch({ type: 'CLEAR_CART' });

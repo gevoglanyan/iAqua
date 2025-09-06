@@ -34,7 +34,7 @@ const Fish = () => (
       <div className="mt-10 flex justify-center">
         <button
           className="bg-primary text-white px-6 py-3 rounded-full shadow-lg hover:bg-purple-700 transition font-semibold"
-          onClick={() => window.open("documents/iAqua Aquatics Fish.xlsx", "_blank")}
+          // onClick={() => window.open("documents/iAqua Aquatics Fish.xlsx", "_blank")}
         >
           View Full Fish List
         </button>
