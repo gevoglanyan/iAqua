@@ -91,7 +91,7 @@ const Checkout = () => {
             <div className="mt-12 relative z-0">
               {CHECKOUT_DISABLED ? (
                 <div className="text-center text-purple-500 font-medium mb-4">
-                  Checkout is currently unavailable. Please check back later.
+                  Our shop is currently being updated, so checkout is temporarily unavailable. <br /> Thanks for your patience — please check back soon!
                 </div>
               ) : (
                 <PayPalScriptProvider options={paypalOptions}>
