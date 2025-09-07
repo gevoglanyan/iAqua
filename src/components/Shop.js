@@ -990,7 +990,6 @@ const ItemCard = ({ item, addToCart }) => {
   );
 };
 
-
 const Shop = () => {
   const { dispatch } = useCart();
 

@@ -21,7 +21,7 @@ const Footer = () => (
               href="https://gevoglanyan.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white-600 hover:underline"
+              className="text-black hover:underline"
             >
               Harutyun Gevoglanyan
             </a>

@@ -6,9 +6,15 @@ const SuccessPage = () => {
 
   return (
     <section className="py-20 bg-white text-center">
+
+      <br /> <br /> 
+
       <h2 className="text-4xl font-bold text-primary mb-4">
-        🎉 Thank You{state?.payerName ? `, ${state.payerName}` : ''}!
+        Thank You{state?.payerName ? `, ${state.payerName}` : ''}!
       </h2>
+
+      <br /> 
+
       <p className="text-lg text-gray-700 mb-4">
         Your payment was successful, and your order has been received.
       </p>
