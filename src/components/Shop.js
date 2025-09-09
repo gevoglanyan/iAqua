@@ -22,6 +22,11 @@ const inventory = {
       { id: 20, name: 'Tetra (Congo) Large', price: 8.99, pricingTiers: [{ min: 10, max: 30, price: 8.49 }] }
     ],
 
+    'African Cichlids': [
+      { id: 151, name: 'Assorted Color 1 1/4" African Cichlids', price: 3.99, pricingTiers: [{ min: 20, max: 50, price: 3.49 }] },
+      { id: 152, name: 'Assorted Color 2" African Cichlids', price: 6.89, pricingTiers: [{ min: 12, max: 40, price: 6.49 }] },
+    ],
+
     Angels: [
       { id: 23, name: 'Angel (Assort) Medium', price: 6.99 },
       { id: 24, name: 'Angel (Assort Veil) Medium', price: 7.99 },
@@ -134,8 +139,6 @@ const inventory = {
     ],
 
     Cichlids: [
-      { id: 151, name: 'Assorted Color 1 1/4" African Cichlids', price: 3.99, pricingTiers: [{ min: 20, max: 50, price: 3.49 }] },
-      { id: 152, name: 'Assorted Color 2" African Cichlids', price: 6.89, pricingTiers: [{ min: 12, max: 40, price: 6.49 }] },
       { id: 153, name: 'Assorted 2" Peacock Cichlids', price: 6.99 },
       { id: 154, name: 'Assorted 3" Peacock Cichlids', price: 15.99, pricingTiers: [{ min: 8, max: 20, price: 15.49 }] },
       { id: 155, name: 'Bumblebee Cichlid 2"', price: 7.99 },
