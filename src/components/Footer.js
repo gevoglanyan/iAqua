@@ -23,7 +23,7 @@ const Footer = () => (
               rel="noopener noreferrer"
               className="text-black hover:underline"
             >
-              Harutyun Gevoglanyan
+              Harry Gevoglanyan
             </a>
           </p>
         </div>
