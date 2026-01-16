@@ -70,9 +70,9 @@ const Hero = () => {
         />
       </div>
 
-      <br /> <br /> <br />
+      <br /> <br /> <br /> 
 
-      <h2 className="text-4xl font-bold text-primary text-center mb-10">Contact Us</h2>
+      <h2 className="text-4xl font-bold text-primary text-center mb-10"><br /> <br /> Contact Us</h2>
       <p className="text-gray-600 text-center text-base mb-14">
         Have a question about an order, a product, or a bulk request? 
         <br />
