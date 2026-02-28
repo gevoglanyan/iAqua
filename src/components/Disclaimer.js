@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-const Disclaimer = () => (
+const Disclaimer = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
   <section id="disclaimer" className="py-20 bg-white">
     <div className="max-w-4xl mx-auto px-4">
       <h2 className="text-4xl font-extrabold text-center text-primary mb-8 tracking-tight">Disclaimer</h2>
@@ -34,6 +39,7 @@ const Disclaimer = () => (
       </p>
     </div>
   </section>
-);
+  );
+};
 
 export default Disclaimer;

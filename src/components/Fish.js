@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-const Fish = () => (
+const Fish = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
   <section id="fish" className="py-20 bg-white">
     <div className="max-w-6xl mx-auto px-4">
       <h2 className="text-4xl font-extrabold text-center text-primary mb-6 tracking-tight">
@@ -41,6 +46,7 @@ const Fish = () => (
       </div>
     </div>
   </section>
-);
+  );
+};
 
 export default Fish;

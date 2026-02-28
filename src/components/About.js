@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-const About = () => (
+const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
   <section id="about" className="py-20 bg-white text-center">
     <div className="max-w-4xl mx-auto px-4">
       <h2 className="text-4xl font-extrabold text-primary mb-8 tracking-tight">About iAqua Aquatics</h2>
@@ -48,6 +53,7 @@ const About = () => (
       </div>
     </div>
   </section>
-);
+  );
+};
 
 export default About;

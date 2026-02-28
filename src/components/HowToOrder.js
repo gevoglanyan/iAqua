@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-const HowToOrder = () => (
+const HowToOrder = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
   <section id="how-to-order" className="py-20 bg-white">
     <div className="max-w-4xl mx-auto px-4 text-center">
       <h2 className="text-4xl font-extrabold text-primary mb-10 tracking-tight">How to Order</h2>
@@ -73,6 +78,7 @@ const HowToOrder = () => (
       </div>
     </div>
   </section>
-);
+  );
+};
 
 export default HowToOrder;

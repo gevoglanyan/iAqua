@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-const ShippingPolicy = () => (
+const ShippingPolicy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
   <section id="shipping-policy" className="py-20 bg-white">
     <div className="max-w-5xl mx-auto px-4">
       <h2 className="text-4xl font-extrabold text-center text-primary mb-10 tracking-tight">Shipping Policy</h2>
@@ -102,6 +107,7 @@ const ShippingPolicy = () => (
       </p>
     </div>
   </section>
-);
+  );
+};
 
 export default ShippingPolicy;
