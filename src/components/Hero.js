@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useForm, ValidationError } from '@formspree/react';
 
 const Hero = () => {
   const [state, handleSubmit] = useForm("xeokqyoq");
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <section className="min-h-screen bg-white  mb-[-1px] flex flex-col items-center justify-center px-4 py-20">
