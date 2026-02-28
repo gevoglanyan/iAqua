@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Fish from './components/Fish';
 import Plant from './components/Plant';
+import Transship from './components/Transship';
 import About from './components/About';
 import HowToOrder from './components/HowToOrder';
 import Disclaimer from './components/Disclaimer';
@@ -50,6 +51,7 @@ function App() {
               <Route path="/shop" element={<Shop />} />
               <Route path="/fish" element={<Fish />} />
               <Route path="/plant" element={<Plant />} />
+              <Route path="/transship" element={<Transship />} />
               <Route path="/about" element={<About />} />
               <Route path="/how-to-order" element={<HowToOrder />} />
               <Route path="/disclaimer" element={<Disclaimer />} />

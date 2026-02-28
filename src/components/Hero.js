@@ -52,6 +52,7 @@ const Hero = () => {
           <Link to="/shop" className="bg-primary text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition font-medium">Explore Our Shop</Link>
           <Link to="/fish" className="bg-primary text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition font-medium">Fish Collection</Link>
           <Link to="/plant" className="bg-primary text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition font-medium">Plant Collection</Link>
+          <Link to="/transship" className="bg-primary text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition font-medium">Transship Collection</Link>
         </div>
       </div>
 
