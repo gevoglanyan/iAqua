@@ -58,10 +58,15 @@ const HowToOrder = () => {
         <p className="text-gray-700 text-base leading-relaxed">
           Simply pick the fish you need — with fixed price and quantity — by any 
           <span className="font-bold text-primary"> Tuesday afternoon</span>, and you’ll receive them the following 
-          <span className="font-bold text-primary"> Tuesday</span>.
+          <span className="font-bold text-primary"> Tuesday</span>. 
+
+          <br /> <br />
+
           <span className="block mt-1">
             Local pickups are available on <span className="font-bold text-primary">Monday</span>.
           </span>
+          
+          <br />
         </p>
         <p className="text-gray-700 text-base leading-relaxed mt-3">
           We offer exceptional <span className="font-bold text-primary">SOUTHWEST shipping</span> within the Domestic USA. You can pack a large number of transship items into one box for added value.

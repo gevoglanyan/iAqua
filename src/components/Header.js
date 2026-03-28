@@ -88,7 +88,7 @@ const Header = () => {
           <li><Link to="/shop" className="hover:text-purple-200">Our Shop</Link></li>
           <li><Link to="/freshwater" className="hover:text-purple-200">Freshwater</Link></li>
           <li><Link to="saltwater" className="hover:text-purple-200">Saltwater</Link></li>
-          <li><Link to="/plant" className="hover:text-purple-200">Plant</Link></li>
+          <li><Link to="/plant" className="hover:text-purple-200">Plants</Link></li>
           <li><Link to="/transship" className="hover:text-purple-200">Transship</Link></li>
           <li><Link to="/how-to-order" className="hover:text-purple-200">How to Order</Link></li>
           <li><Link to="/disclaimer" className="hover:text-purple-200">Disclaimer</Link></li>
