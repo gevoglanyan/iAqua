@@ -54,8 +54,8 @@ const Hero = () => {
 
         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-8 mb-16">
           <Link to="/shop" className="bg-primary text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition font-medium">Explore Our Shop</Link>
-          <Link to="/freshwater" className="bg-primary text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition font-medium">Fish Collection</Link>
-          <Link to="/saltwater" className="bg-primary text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition font-medium">Fish Collection</Link>
+          <Link to="/freshwater" className="bg-primary text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition font-medium">Freshwater Collection</Link>
+          <Link to="/saltwater" className="bg-primary text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition font-medium">Saltwater Collection</Link>
           <Link to="/plant" className="bg-primary text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition font-medium">Plant Collection</Link>
           <Link to="/transship" className="bg-primary text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition font-medium">Transship Collection</Link>
         </div>
