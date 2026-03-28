@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Fish from './components/Fish';
+import Freshwater from './components/Freshwater';
+import Saltwater from './components/Saltwater';
 import Plant from './components/Plant';
 import Transship from './components/Transship';
 import About from './components/About';
@@ -49,7 +50,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/shop" element={<Shop />} />
-              <Route path="/fish" element={<Fish />} />
+              <Route path="/freshwater" element={<Freshwater />} />
+              <Route path="/saltwater" element={<Saltwater />} />
               <Route path="/plant" element={<Plant />} />
               <Route path="/transship" element={<Transship />} />
               <Route path="/about" element={<About />} />

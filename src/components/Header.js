@@ -39,7 +39,7 @@ const Header = () => {
           >
             {isOpen ? (
 
-              <span className="text-3xl">✖</span>
+              <span className="text-3xl">x</span>
             ) : (
               <svg
                 className="icon-hamburger w-6 h-6"
@@ -86,7 +86,8 @@ const Header = () => {
         <ul className="hidden md:flex items-center gap-8 text-lg font-medium text-center mx-auto">
           <li><Link to="/" state={{ scrollTo: 'top' }} className="hover:text-purple-200">Home</Link></li>
           <li><Link to="/shop" className="hover:text-purple-200">Our Shop</Link></li>
-          <li><Link to="/fish" className="hover:text-purple-200">Fish</Link></li>
+          <li><Link to="/freshwater" className="hover:text-purple-200">Freshwater</Link></li>
+          <li><Link to="saltwater" className="hover:text-purple-200">Saltwater</Link></li>
           <li><Link to="/plant" className="hover:text-purple-200">Plant</Link></li>
           <li><Link to="/transship" className="hover:text-purple-200">Transship</Link></li>
           <li><Link to="/how-to-order" className="hover:text-purple-200">How to Order</Link></li>
@@ -138,7 +139,8 @@ const Header = () => {
           <ul className="flex flex-col gap-6 text-lg font-medium text-center">
             <li><Link to="/" state={{ scrollTo: 'top' }} onClick={closeMenu} className="hover:text-purple-200">Home</Link></li>
             <li><Link to="/shop" onClick={closeMenu} className="hover:text-purple-200">Our Shop</Link></li>
-            <li><Link to="/fish" onClick={closeMenu} className="hover:text-purple-200">Fish Collection</Link></li>
+            <li><Link to="/freshwater" onClick={closeMenu} className="hover:text-purple-200"> Freshwater Collection</Link></li>
+            <li><Link to="saltwater" onClick={closeMenu} className="hover:text-purple-200">Saltwater Collection</Link></li>
             <li><Link to="/plant" onClick={closeMenu} className="hover:text-purple-200">Plant Collection</Link></li>
             <li><Link to="/transship" onClick={closeMenu} className="hover:text-purple-200">Transship Collection</Link></li>
             <li><Link to="/how-to-order" onClick={closeMenu} className="hover:text-purple-200">How to Order</Link></li>
@@ -146,7 +148,7 @@ const Header = () => {
             <li><Link to="/shipping-policy" onClick={closeMenu} className="hover:text-purple-200">Shipping Policy</Link></li>
             <li><Link to="/about" onClick={closeMenu} className="hover:text-purple-200">About Us</Link></li>
           </ul>
-        </nav>
+        </nav> 
       )}
     </header>
   );

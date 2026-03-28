@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 
-const Fish = () => {
+const Freshwater = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-  <section id="fish" className="py-20 bg-white">
+  <section id="freshwater" className="py-20 bg-white">
     <div className="max-w-6xl mx-auto px-4">
       <h2 className="text-4xl font-extrabold text-center text-primary mb-6 tracking-tight">
         Our Freshwater Fish Selection
@@ -39,9 +39,9 @@ const Fish = () => {
       <div className="mt-10 flex justify-center">
         <button
           className="bg-primary text-white px-6 py-3 rounded-full shadow-lg hover:bg-purple-700 transition font-semibold"
-          onClick={() => window.open("documents/iAqua Aquatics Fish.xlsx", "_blank")}
+          onClick={() => window.open("documents/iAqua Aquatics Freshwater.xlsx", "_blank")}
         >
-          View Full Fish List
+          View Full Freshwater Fish List
         </button>
       </div>
     </div>
@@ -49,4 +49,4 @@ const Fish = () => {
   );
 };
 
-export default Fish;
+export default Freshwater;

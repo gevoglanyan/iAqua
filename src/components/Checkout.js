@@ -30,7 +30,7 @@ const Checkout = () => {
         </h2>
 
         {cart.length === 0 ? (
-          <p className="text-center text-gray-600 text-lg">Your cart is empty.</p>
+          <p className="text-center text-gray-600 text-lg">Your cart is currently empty</p>
         ) : (
           <>
             <div className="bg-white rounded-lg shadow-lg p-6 space-y-6">

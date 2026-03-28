@@ -37,11 +37,11 @@ const Hero = () => {
           <p className="text-gray-700 text-base leading-relaxed">
             Simply pick the fish you need — with fixed price and quantity — by any 
             <span className="font-bold text-primary"> Tuesday afternoon</span>, and you’ll receive them the following 
-            <span className="font-bold text-primary"> Tuesday</span>.
-            <span className="block mt-1">
-              Local pickups are available on <span className="font-bold text-primary">Monday</span>.
-            </span>
+            <span className="font-bold text-primary"> Tuesday</span>. Local pickups are available on <span className="font-bold text-primary">Monday</span>.
           </p>
+
+          <br /> 
+
           <p className="text-gray-700 text-base leading-relaxed mt-3">
             We offer exceptional <span className="font-bold text-primary">SOUTHWEST shipping</span> within the Domestic USA. You can pack a large number of transship items into one box for added value.
           </p>
@@ -50,11 +50,12 @@ const Hero = () => {
           
         </div>
 
-        <br /> <br />
+        <br /> <br /> <br />
 
         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-8 mb-16">
           <Link to="/shop" className="bg-primary text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition font-medium">Explore Our Shop</Link>
-          <Link to="/fish" className="bg-primary text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition font-medium">Fish Collection</Link>
+          <Link to="/freshwater" className="bg-primary text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition font-medium">Fish Collection</Link>
+          <Link to="/saltwater" className="bg-primary text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition font-medium">Fish Collection</Link>
           <Link to="/plant" className="bg-primary text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition font-medium">Plant Collection</Link>
           <Link to="/transship" className="bg-primary text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition font-medium">Transship Collection</Link>
         </div>

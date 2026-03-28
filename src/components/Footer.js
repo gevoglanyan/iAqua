@@ -33,7 +33,8 @@ const Footer = () => (
           <ul className="space-y-2">
             <li><Link to="/" state={{ scrollTo: 'top' }} className="hover:text-purple-200">Home</Link></li>
             <li><Link to="/shop" state={{ scrollTo: 'shop' }} className="hover:text-purple-200">Our Shop</Link></li>
-            <li><Link to="/fish" state={{ scrollTo: 'fish' }} className="hover:text-purple-200">Fish Collection</Link></li>
+            <li><Link to="/freshwater" state={{ scrollTo: 'freshwater' }} className="hover:text-purple-200">Freshwater Collection</Link></li>
+            <li><Link to="/saltwater" state={{ scrollTo: 'saltwater' }} className="hover:text-purple-200">Saltwater Collection</Link></li>
             <li><Link to="/plant" state={{ scrollTo: 'plant' }} className="hover:text-purple-200">Plant Collection</Link></li>
             <li><Link to="/transship" state={{ scrollTo: 'transship' }} className="hover:text-purple-200">Transship Collection</Link></li>
             <li><Link to="/how-to-order" className="hover:text-purple-200">How to Order</Link></li>
